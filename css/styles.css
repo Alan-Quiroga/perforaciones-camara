@@ -1,3 +1,15 @@
+.container {
+  width: 100%;
+  max-width: 1300px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
 /* Estilos del Navbar Profesional */
 :root {
   --primary-blue: #0056b3;        /* Azul corporativo principal */
@@ -183,6 +195,15 @@
 }
 
 @media (max-width: 768px) {
+  body, html {
+    overflow-x: hidden;
+  }
+  
+  .navbar {
+    width: 100vw; /* fuerza que no se desborde */
+    box-sizing: border-box;
+  }  
+
   .navbar {
     position: fixed;
     top: 0;
@@ -236,7 +257,13 @@
   .mobile-menu-btn.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -6px);
   }
+
+  
 }
+
+
+
+
 
 .breadcrumbs {
   position: absolute;
@@ -258,6 +285,7 @@
   overflow: hidden;
   margin-top: 70px; /* Para compensar el navbar fixed */
 }
+
 
 .hero .container {
   display: flex;
@@ -438,7 +466,8 @@
 
 @media (max-width: 768px) {
   .hero {
-    padding: 100px 0 60px;
+    padding-top: 90px;
+    margin-top: 0; 
   }
   
   .hero h1 {
@@ -451,17 +480,67 @@
   
   .hero-buttons {
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+    align-items: stretch;
   }
   
   .btn-primary, .btn-secondary {
     width: 100%;
+    padding: 14px;
     justify-content: center;
-    padding: 12px 20px;
+    text-align: center;
+    font-size: 1rem;
+    box-sizing: border-box;
   }
   
   .hero-image {
     max-width: 100%;
+  }
+
+  .hero .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  .hero,
+  .hero .container,
+  .hero-content,
+  .hero-buttons {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow-x: hidden;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transform: none !important;
+  }
+  
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+  }
+
+  .hero p {
+    font-size: 1rem;
   }
 }
 
