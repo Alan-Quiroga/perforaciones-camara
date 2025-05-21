@@ -22,12 +22,12 @@
     position: fixed;
     top: 0;
     right: -100%;
-    width: 280px;
+    width: 200px;
     height: 100vh;
     background-color: var(--white);
     flex-direction: column;
     justify-content: flex-start;
-    padding: 80px 30px 30px;
+    padding: 80px 20px 30px;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
   }
@@ -50,6 +50,21 @@
     font-size: 1.1rem;
   }
   
+  .navbar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 998;
+    display: none;
+  }
+  
+  .navbar-overlay.active {
+    display: block;
+  }
+
   .btn-nav {
     margin: 1rem 0 0 0;
     width: 60%;
@@ -174,8 +189,8 @@
   }
 
   .navbar {
-    width: 75vw;
-    padding: 70px 20px 20px;
+    width: 35vw;
+    padding: 70px 15px 20px;
   }
 
   /* Hero */
