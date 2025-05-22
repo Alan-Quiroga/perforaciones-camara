@@ -1,5 +1,5 @@
 /* tablet.css - Media queries para tablet (481px — 900px) */
-@media (min-width: 481px) and (max-width: 900px) {
+@media (min-width: 481px) and (max-width: 1080px) {
   /* Navbar Principal - Barra Superior */
   .header .container {
     padding: 10px 5%;
@@ -139,11 +139,7 @@
   }
 
   /* Services Section */
-  .services-grid {
-    grid-template-columns: 1fr;
-    max-width: 500px;
-    margin: 0 auto;
-  }
+ 
   
   .service-card {
     max-width: 100%;
@@ -188,10 +184,7 @@
   }
 
   /* Contact Section */
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-  
+ 
   .map-container {
     height: 300px;
     order: -1;
@@ -210,6 +203,7 @@
 
   .form-group input,
   .form-group textarea {
+    width: 93%;
     padding: 10px 12px;
     font-size: 0.9rem;
   }
