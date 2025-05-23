@@ -246,7 +246,7 @@
   }
 
   .hero-image {
-    width: 65%; /* Un poco más angosta en móviles pequeños */
+    width: 75%; /* Un poco más angosta en móviles pequeños */
     max-width: 300px;
   }
 
