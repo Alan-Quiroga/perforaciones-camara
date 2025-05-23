@@ -1,5 +1,5 @@
 /* tablet.css - Media queries para tablet (481px — 980px) */
-@media (min-width: 481px) and (max-width: 980px) {
+@media (min-width: 481px) and (max-width: 900px) {
   /* Navbar Principal - Barra Superior */
   .header .container {
     padding: 10px 5%;
