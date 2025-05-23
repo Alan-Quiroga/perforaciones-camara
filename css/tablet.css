@@ -1,4 +1,4 @@
-/* tablet.css - Media queries para tablet (481px — 980px) */
+/* tablet.css - Media queries para tablet (481px — 900px) */
 @media (min-width: 481px) and (max-width: 900px) {
   /* Navbar Principal - Barra Superior */
   .header .container {

@@ -22,6 +22,7 @@ window.addEventListener('scroll', function() {
 });
 */
 
+/*
 // Efecto de aparición gradual de las cards al hacer scroll
 document.addEventListener('DOMContentLoaded', function() {
   const serviceCards = document.querySelectorAll('.service-card');
@@ -36,7 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }, { threshold: 0.1 });
-  
+  */
+ 
   serviceCards.forEach(card => {
     card.style.opacity = 0;
     card.style.transform = 'translateY(30px)';
