@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }, { threshold: 0.1 });
-  */
- 
+  
+
   serviceCards.forEach(card => {
     card.style.opacity = 0;
     card.style.transform = 'translateY(30px)';
@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+*/
 // Animación de los pasos al hacer scroll
 document.addEventListener('DOMContentLoaded', function() {
   const steps = document.querySelectorAll('.step');
