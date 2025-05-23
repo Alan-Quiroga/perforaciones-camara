@@ -481,6 +481,18 @@
   z-index: 0;
 }
 
+
+/* Oculta el botón toggle en desktop */
+.features-toggle {
+  display: none;
+}
+
+/* Asegura que las características sean visibles */
+.service-features {
+  display: block !important;
+  max-height: none !important;
+}
+
 /* Projects Section */
 .projects {
   padding: 80px 0;

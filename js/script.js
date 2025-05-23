@@ -13,41 +13,52 @@ window.addEventListener('scroll', () => {
   header.classList.toggle('scrolled', window.scrollY > 50);
 });
 
-/*
-// Efecto Parallax para la imagen del hero
-window.addEventListener('scroll', function() {
-  const heroImage = document.querySelector('.hero-image img');
-  const scrollPosition = window.pageYOffset;
-  heroImage.style.transform = `perspective(1000px) rotateY(-10deg) translateY(${scrollPosition * 0.2}px)`;
-});
-*/
-
-/*
-// Efecto de aparición gradual de las cards al hacer scroll
 document.addEventListener('DOMContentLoaded', function() {
-  const serviceCards = document.querySelectorAll('.service-card');
+  const toggleButtons = document.querySelectorAll('.features-toggle');
   
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, index) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.style.opacity = 1;
-          entry.target.style.transform = 'translateY(0)';
-        }, 150 * index);
-      }
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    toggleButtons.forEach(button => {
+      // Inicialización
+      const card = button.closest('.service-card');
+      const features = button.nextElementSibling;
+      
+      // Calcular alturas
+      const basicHeight = card.querySelector('.service-icon').offsetHeight + 
+                         card.querySelector('h3').offsetHeight + 
+                         card.querySelector('p').offsetHeight + 
+                         button.offsetHeight + 40; // 40px de márgenes/paddings
+      
+      // Establecer altura inicial
+      card.style.height = basicHeight + 'px';
+      card.classList.remove('expanded');
+      
+      // Evento click
+      button.addEventListener('click', function() {
+        const isExpanding = !card.classList.contains('expanded');
+        
+        if (isExpanding) {
+          // Calcular altura total cuando se expande
+          const fullHeight = basicHeight + features.scrollHeight;
+          card.style.height = fullHeight + 'px';
+        } else {
+          // Volver a altura básica
+          card.style.height = basicHeight + 'px';
+        }
+        
+        // Alternar clases
+        card.classList.toggle('expanded');
+        features.classList.toggle('active');
+        this.classList.toggle('active');
+        
+        // Cambiar texto del botón
+        this.textContent = isExpanding 
+          ? '▲ Ocultar características' 
+          : '▼ Ver características';
+      });
     });
-  }, { threshold: 0.1 });
-  
-
-  serviceCards.forEach(card => {
-    card.style.opacity = 0;
-    card.style.transform = 'translateY(30px)';
-    card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    observer.observe(card);
-  });
+  }
 });
 
-*/
 // Animación de los pasos al hacer scroll
 document.addEventListener('DOMContentLoaded', function() {
   const steps = document.querySelectorAll('.step');
