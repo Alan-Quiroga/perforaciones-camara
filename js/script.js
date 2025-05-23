@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const botones = document.querySelectorAll('.features-toggle');
     const cards = document.querySelectorAll('.service-card');
 
-    if (ancho >= 769 && ancho <= 900) {
+    if (ancho >= 769) {
       // Modo tablet: mostrar todo
       features.forEach(el => {
         el.style.maxHeight = 'none';
