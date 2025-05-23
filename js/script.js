@@ -13,56 +13,114 @@ window.addEventListener('scroll', () => {
   header.classList.toggle('scrolled', window.scrollY > 50);
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+// Expansión dinámica de servicios (botones + rotación responsive)
+document.addEventListener('DOMContentLoaded', function () {
   const toggleButtons = document.querySelectorAll('.features-toggle');
-  
-  if (window.matchMedia("(max-width: 768px)").matches) {
-    toggleButtons.forEach(button => {
-      // Inicialización
-      const card = button.closest('.service-card');
-      const features = button.nextElementSibling;
-      
-      // Calcular alturas
-      const basicHeight = card.querySelector('.service-icon').offsetHeight + 
-                         card.querySelector('h3').offsetHeight + 
-                         card.querySelector('p').offsetHeight + 
-                         button.offsetHeight + 40; // 40px de márgenes/paddings
-      
-      // Establecer altura inicial
-      card.style.height = basicHeight + 'px';
-      card.classList.remove('expanded');
-      
-      // Evento click
-      button.addEventListener('click', function() {
-        const isExpanding = !card.classList.contains('expanded');
-        
-        if (isExpanding) {
-          // Calcular altura total cuando se expande
-          const fullHeight = basicHeight + features.scrollHeight;
+
+  toggleButtons.forEach(button => {
+    const card = button.closest('.service-card');
+    const features = card.querySelector('.service-features');
+    const icon = card.querySelector('.service-icon');
+    const title = card.querySelector('h3');
+    const desc = card.querySelector('p');
+
+    const baseHeight = icon.offsetHeight + title.offsetHeight + desc.offsetHeight + button.offsetHeight + 40;
+    card.style.height = baseHeight + 'px';
+    card.classList.remove('expanded');
+    features.classList.remove('active');
+
+    button.addEventListener('click', function () {
+      const isExpanding = !card.classList.contains('expanded');
+
+      if (isExpanding) {
+        const fullHeight = baseHeight + features.scrollHeight + 20;
+        card.style.height = fullHeight + 'px';
+      } else {
+        card.style.height = baseHeight + 'px';
+      }
+
+      card.classList.toggle('expanded');
+      features.classList.toggle('active');
+      button.classList.toggle('active');
+
+      this.textContent = isExpanding
+        ? '▲ Ocultar características'
+        : '▼ Ver características';
+
+      ajustarVisibilidadPorPantalla(); // asegura estilo correcto tras click
+    });
+  });
+
+  // Función para ajustar el comportamiento responsive
+  function ajustarVisibilidadPorPantalla() {
+    const ancho = window.innerWidth;
+    const features = document.querySelectorAll('.service-features');
+    const botones = document.querySelectorAll('.features-toggle');
+    const cards = document.querySelectorAll('.service-card');
+
+    if (ancho >= 769 && ancho <= 900) {
+      // Modo tablet: mostrar todo
+      features.forEach(el => {
+        el.style.maxHeight = 'none';
+        el.style.opacity = '1';
+        el.style.padding = '0 15px 15px';
+        el.style.overflow = 'visible';
+      });
+      botones.forEach(btn => {
+        btn.style.display = 'none';
+      });
+      cards.forEach(card => {
+        card.style.height = 'auto';
+      });
+    } else {
+      // Modo móvil: vuelve a comportamiento animado
+      features.forEach(el => {
+        const card = el.closest('.service-card');
+        if (!card.classList.contains('expanded')) {
+          el.style.maxHeight = '0';
+          el.style.opacity = '0';
+          el.style.padding = '0 15px';
+          el.style.overflow = 'hidden';
+        } else {
+          el.style.maxHeight = '1000px';
+          el.style.opacity = '1';
+          el.style.padding = '0 15px 15px';
+          el.style.overflow = 'visible';
+        }
+      });
+      botones.forEach(btn => {
+        btn.style.display = 'block';
+      });
+
+      // Recalcular altura de cada card
+      cards.forEach(card => {
+        const icon = card.querySelector('.service-icon');
+        const title = card.querySelector('h3');
+        const desc = card.querySelector('p');
+        const button = card.querySelector('.features-toggle');
+        const features = card.querySelector('.service-features');
+
+        const baseHeight = icon.offsetHeight + title.offsetHeight + desc.offsetHeight + button.offsetHeight + 40;
+
+        if (card.classList.contains('expanded')) {
+          const fullHeight = baseHeight + features.scrollHeight + 20;
           card.style.height = fullHeight + 'px';
         } else {
-          // Volver a altura básica
-          card.style.height = basicHeight + 'px';
+          card.style.height = baseHeight + 'px';
         }
-        
-        // Alternar clases
-        card.classList.toggle('expanded');
-        features.classList.toggle('active');
-        this.classList.toggle('active');
-        
-        // Cambiar texto del botón
-        this.textContent = isExpanding 
-          ? '▲ Ocultar características' 
-          : '▼ Ver características';
       });
-    });
+    }
   }
+
+  // Ejecutar al cargar y al cambiar tamaño
+  window.addEventListener('load', ajustarVisibilidadPorPantalla);
+  window.addEventListener('resize', ajustarVisibilidadPorPantalla);
 });
 
 // Animación de los pasos al hacer scroll
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const steps = document.querySelectorAll('.step');
-  
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry, index) => {
       if (entry.isIntersecting) {
@@ -73,25 +131,24 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }, { threshold: 0.1 });
-  
+
   steps.forEach(step => {
     step.style.opacity = 0;
     step.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    
+
     if (step.querySelector('.step-content').classList.contains('odd')) {
       step.style.transform = 'translateX(-50px)';
     } else {
       step.style.transform = 'translateX(50px)';
     }
-    
+
     observer.observe(step);
   });
 });
 
 // Inicialización del carrusel
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const projectsSwiper = new Swiper('.projects-swiper', {
-    // Configuración del carrusel
     loop: true,
     slidesPerView: 1,
     spaceBetween: 30,
@@ -109,11 +166,9 @@ document.addEventListener('DOMContentLoaded', function() {
       prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-      // Cuando el ancho es >= 768px
       768: {
         slidesPerView: 2,
       },
-      // Cuando el ancho es >= 992px
       992: {
         slidesPerView: 3,
       }

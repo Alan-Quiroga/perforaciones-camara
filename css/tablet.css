@@ -137,7 +137,9 @@
  
   
   .service-card {
-    max-width: 100%;
+    max-height: none !important;
+    height: auto !important;
+    overflow: visible !important;
   }
   
   .section-header h2 {
@@ -152,6 +154,7 @@
   .features-toggle {
     display: none;
   }
+  
   
   /* Asegura que las características sean visibles */
   .service-features {
