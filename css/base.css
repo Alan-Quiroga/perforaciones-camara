@@ -208,6 +208,7 @@
   flex: 1;
   position: relative;
   animation: fadeIn 1s ease-out;
+  display: block;
 }
 
 .hero-image img {
@@ -217,6 +218,18 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Elimina transform: perspective y rotateY */
   transform: none !important; /* Fuerza a que no haya transformaciones */
   transition: transform 0.5s ease;
+}
+
+.hero-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  height: 20%; /* 1/6 de la altura */
+  background: linear-gradient(to top, rgb(236, 239, 241) 0%, rgba(255,255,255, 0) 100%);
+  pointer-events: none; /* Permite interacción con la imagen */
+  border-radius: 0 0 8px 8px; /* Coincide con el border-radius de la imagen */
 }
 
 .hero-image:hover img {
