@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
 // Animación de los pasos al hacer scroll
 document.addEventListener('DOMContentLoaded', function() {
   const steps = document.querySelectorAll('.step');
