@@ -1,5 +1,5 @@
-/* tablet.css - Media queries para tablet (481px — 900px) */
-@media (min-width: 481px) and (max-width: 1080px) {
+/* tablet.css - Media queries para tablet (481px — 980px) */
+@media (min-width: 481px) and (max-width: 980px) {
   /* Navbar Principal - Barra Superior */
   .header .container {
     padding: 10px 5%;
@@ -96,7 +96,7 @@
 
   /* Hero Section */
   .hero {
-    padding-top: 90px;
+    padding-top: 45px;
     margin-top: 0; 
   }
   
