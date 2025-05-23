@@ -24,9 +24,7 @@
   .logo-slogan {
     display: none;
   }
-
-  /* Navbar Desktop (para pantallas más grandes dentro del rango) */
-  @media (min-width: 768px) {
+  
     .nav-links {
       display: flex;
       align-items: center;
@@ -47,10 +45,8 @@
       margin-left: 0.8rem;
       white-space: nowrap;
     }
-  }
 
-  /* Menú Hamburguesa (para pantallas más pequeñas) */
-  @media (max-width: 767px) {
+
     .navbar {
       position: fixed;
       top: 0;
@@ -97,7 +93,6 @@
       height: 20px;
       z-index: 1000;
     }
-  }
 
   /* Hero Section */
   .hero {
