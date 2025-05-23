@@ -13,12 +13,14 @@ window.addEventListener('scroll', () => {
   header.classList.toggle('scrolled', window.scrollY > 50);
 });
 
+/*
 // Efecto Parallax para la imagen del hero
 window.addEventListener('scroll', function() {
   const heroImage = document.querySelector('.hero-image img');
   const scrollPosition = window.pageYOffset;
   heroImage.style.transform = `perspective(1000px) rotateY(-10deg) translateY(${scrollPosition * 0.2}px)`;
 });
+*/
 
 // Efecto de aparición gradual de las cards al hacer scroll
 document.addEventListener('DOMContentLoaded', function() {

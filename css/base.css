@@ -211,10 +211,11 @@
 }
 
 .hero-image img {
-  width: 100%;
+  width: 80%; /* Reducir el tamaño al 80% (ajusta según necesites) */
+  max-width: 500px; /* Opcional: Define un ancho máximo */
   border-radius: 8px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  transform: perspective(1000px) rotateY(-10deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Elimina transform: perspective y rotateY */
+  transform: none !important; /* Fuerza a que no haya transformaciones */
   transition: transform 0.5s ease;
 }
 
