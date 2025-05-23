@@ -186,18 +186,18 @@
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     overflow: hidden;
-    transition: height 0.4s ease-out;
+    transition: height 0.2s ease-out;
     height: auto;
-    max-height: 500px; /* Altura máxima cuando está expandido */
+    max-height: 1000px; /* Altura máxima cuando está expandido */
   }
 
   .service-card:not(.expanded) {
-    max-height: 320px; /* Altura aproximada del contenido básico */
+    max-height: auto; /* Altura aproximada del contenido básico */
     margin: 15px auto !important;
   }
 
   .service-card.expanded {
-    max-height: 1500px
+    max-height: 1000px
   }
 
   .service-icon {
