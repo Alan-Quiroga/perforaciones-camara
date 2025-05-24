@@ -423,10 +423,11 @@
 }
 
 .service-icon img {
-  width: 80px;
-  height: 80px;
+  width: 200px; /* Aumenté de 80px a 100px */
+  height: 200px; /* Aumenté de 80px a 100px */
   object-fit: contain;
   filter: drop-shadow(0 5px 10px rgba(0, 86, 179, 0.1));
+  border-radius: 90px; /* Añadí esquinas redondeadas */
 }
 
 .service-card h3 {
