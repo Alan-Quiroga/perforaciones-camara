@@ -423,11 +423,14 @@
 }
 
 .service-icon img {
-  width: 200px; /* Aumenté de 80px a 100px */
-  height: 200px; /* Aumenté de 80px a 100px */
-  object-fit: contain;
+  width: 200px;
+  height: 200px;
+  object-fit: contain; /* Mantiene la imagen intacta */
+  background-color: white; /* Rellena espacios vacíos (ajusta el color) */
+  border-radius: 50%; /* Círculo perfecto */
+  padding: 2px; /* Opcional: espacio interno entre imagen y borde */
   filter: drop-shadow(0 5px 10px rgba(0, 86, 179, 0.1));
-  border-radius: 90px; /* Añadí esquinas redondeadas */
+  box-sizing: border-box; /* Asegura que el padding no afecte las dimensiones */
 }
 
 .service-card h3 {
