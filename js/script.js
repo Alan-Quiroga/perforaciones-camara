@@ -172,6 +172,27 @@ document.addEventListener('DOMContentLoaded', function () {
       992: {
         slidesPerView: 3,
       }
+    },
+    on: {
+      init: function () {
+        // Ajustar todas las slides a la misma altura
+        setTimeout(() => {
+          const slides = document.querySelectorAll('.project-slide');
+          let maxHeight = 0;
+
+          slides.forEach(slide => {
+            slide.style.height = 'auto'; // reset
+            const height = slide.offsetHeight;
+            if (height > maxHeight) {
+              maxHeight = height;
+            }
+          });
+
+          slides.forEach(slide => {
+            slide.style.height = maxHeight + 'px';
+          });
+        }, 100); // Esperar a que todo esté bien renderizado
+      }
     }
   });
 });
