@@ -196,3 +196,56 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+// ===============================
+// FORMULARIO A WHATSAPP
+// ===============================
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.getElementById('contactForm');
+
+  if (!form) return;
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Obtener valores
+    const nombre = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const telefono = document.getElementById('phone').value.trim();
+    const servicio = document.getElementById('service').value;
+    const mensaje = document.getElementById('message').value.trim();
+
+    // Validación básica
+    if (!nombre || !email || !telefono || !servicio || !mensaje) {
+      alert('Por favor complete todos los campos');
+      return;
+    }
+
+    // Mensaje PRO optimizado
+    const texto = 
+`Hola! 👋
+Quiero consultar por un servicio.
+
+🧑 Nombre: ${nombre}
+📧 Email: ${email}
+📞 Teléfono: ${telefono}
+🔧 Servicio: ${servicio}
+
+📝 Mensaje:
+${mensaje}`;
+
+    // Codificar para URL
+    const textoCodificado = encodeURIComponent(texto);
+
+    // Número (formato internacional sin + ni espacios)
+    const numero = "541135242337";
+
+    const url = `https://wa.me/${numero}?text=${textoCodificado}`;
+
+    // Abrir WhatsApp
+    window.open(url, '_blank');
+
+    // Reset opcional del formulario
+    form.reset();
+  });
+});

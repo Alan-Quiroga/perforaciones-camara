@@ -702,6 +702,14 @@ body {
   font-weight: bold;
 }
 
+.swiper-button-next::after {
+  content: '›' !important;
+}
+
+.swiper-button-prev::after {
+  content: '‹' !important;
+}
+
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   background: linear-gradient(135deg, var(--green-primary), var(--green-dark));
@@ -890,6 +898,16 @@ body {
   pointer-events: none;
 }
 
+  .contact-link {
+    color: inherit; /* usa el mismo color del <p> */
+    text-decoration: none;
+  }
+
+  /* efecto sutil */
+  .contact-link:hover {
+    text-decoration: underline;
+  }
+
 /* ============================================
    FOOTER
    ============================================ */
@@ -945,6 +963,10 @@ body {
   opacity: 0.7;
 }
 
+.credits a {
+  color: inherit; /* 👈 usa el mismo color del <p> */
+  text-decoration: underline; /* opcional: sin subrayado */
+}
 /* ============================================
    WHATSAPP FLOTANTE
    ============================================ */

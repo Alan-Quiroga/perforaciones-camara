@@ -301,7 +301,19 @@
   /* Projects Section */
   .swiper-button-next,
   .swiper-button-prev {
-    display: none;
+    display: none !important;
+  }
+
+  .swiper {
+  cursor: grab;
+  }
+
+  .swiper:active {
+    cursor: grabbing;
+  }
+
+  .swiper-slide {
+  width: 100% !important;
   }
 
   /* Contact Section */
@@ -309,6 +321,11 @@
     grid-template-columns: 1fr;
   }
   
+  .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+
   .map-container {
     order: -1;
   }
@@ -408,19 +425,49 @@
     padding: 50px 0;
   }
 
+  .projects-swiper {
+    width: 100%;
+    overflow: hidden;
+  }
+
   .project-slide {
-    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
   }
 
+  /* imagen responsive */
+  .project-slide img {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  /* contenido */
   .project-info {
-    padding: 15px;
+    padding: 10px 5px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
+  /* textos */
   .project-info h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
-  .project-info ul li {
+  .project-info p {
+    font-size: 0.9rem;
+  }
+
+  /* lista */
+  .project-info ul {
+    padding-left: 18px;
+  }
+
+  .project-info li {
     font-size: 0.85rem;
   }
 
