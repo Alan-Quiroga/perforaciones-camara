@@ -7,6 +7,10 @@
   .logo-slogan {
     display: none;
   }
+
+  .logo-image img {
+    max-height: 40px;
+  }
   
   .nav-item {
     margin-left: 1rem;
@@ -126,27 +130,29 @@
   }
   
   .hero-image {
-    width: 85%; /* Imagen más estrecha */
-    max-width: 350px; /* Tamaño máximo controlado */
-    margin: 0 auto; /* Centrado */
+  width: 85%;
+  max-width: 350px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; /* evita desbordes */
   }
 
-  .hero-image img {
-    width: 85%;
-    transform: none !important; /* Elimina perspectiva */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+.hero-image img {
+  width: 100%;
+  display: block;
+  transform: none !important;
   }
 
-  .hero-image::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 92.5%;
-    height: 20%; /* 1/6 de la altura */
-    background: linear-gradient(to top, rgb(236, 239, 241) 0%, rgba(255,255,255, 0) 100%);
-    pointer-events: none; /* Permite interacción con la imagen */
-    border-radius: 0 0 8px 8px; /* Coincide con el border-radius de la imagen */
+.hero-image::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to top, rgb(236, 239, 241) 0%, rgba(255,255,255, 0) 100%);
+  pointer-events: none;
+  border-radius: 0 0 8px 8px;
   }
 
   /* Elimina hover en móvil */
@@ -323,6 +329,7 @@
   .header .container {
     padding: 12px 15px;
   }
+  
   
   .logo-text {
     font-size: 1.5rem;
