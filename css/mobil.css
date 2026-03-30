@@ -296,7 +296,29 @@
     transform: rotate(180deg);
   }
 
+  /* ============================================
+   SECCIÓN ¿POR QUÉ ELEGIRNOS? (TRUST SECTION)
+   ============================================ */
+
+  .trust-section {
+    padding: 40px 0;
+  }
   
+  .trust-list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .trust-list li {
+    padding: 18px 18px 18px 60px;
+  }
+  
+  .trust-list li:before {
+    left: 18px;
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
 
   /* Projects Section */
   .swiper-button-next,
@@ -332,6 +354,24 @@
   
   .form-group label {
     white-space: normal;
+  }
+
+  .seo-content p,
+  .faq-section p {
+    text-align: left;
+  }
+  
+  .reviews-cta {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .reviews-content h4 {
+    text-align: center;
+  }
+  
+  .rating {
+    justify-content: center;
   }
 
   /* WhatsApp Button */
@@ -420,6 +460,25 @@
     font-size: 1.1rem;
   }
 
+  /* ============================================
+   SECCIÓN ¿POR QUÉ ELEGIRNOS? (TRUST SECTION)
+   ============================================ */
+
+  .trust-section .container {
+    width: 92%;
+  }
+  
+  .trust-list li {
+    padding: 15px 15px 15px 55px;
+  }
+  
+  .trust-list li:before {
+    left: 15px;
+    width: 28px;
+    height: 28px;
+    font-size: 0.9rem;
+  }
+
   /* Projects */
   .projects {
     padding: 50px 0;
@@ -499,11 +558,24 @@
     margin-bottom: 5px;
   }
 
-    .reviews-cta {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    }
+  .reviews-cta {
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  }
+
+  seo-content .container,
+  .faq-section .container {
+    width: 92%;
+  }
+  
+  .faq-section h3 {
+    padding-left: 10px;
+  }
+  
+  .faq-section p {
+    padding-left: 14px;
+  }
 
   /* WhatsApp Button */
   .whatsapp-float {
@@ -537,3 +609,4 @@
     flex-shrink: 0;
   }
 }
+

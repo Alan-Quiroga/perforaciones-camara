@@ -575,6 +575,114 @@ body {
 }
 
 /* ============================================
+   SECCIÓN ¿POR QUÉ ELEGIRNOS? (TRUST SECTION)
+   ============================================ */
+  .trust-section {
+    padding: 50px 0;
+    background: linear-gradient(135deg, var(--white-soft) 0%, var(--white-pure) 100%);
+    position: relative;
+  }
+
+  .trust-section .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .trust-section h2 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    font-weight: 700;
+    color: var(--dark-gray);
+    margin-bottom: clamp(30px, 5vw, 45px);
+    text-align: center;
+    line-height: 1.3;
+    position: relative;
+    padding-bottom: 15px;
+  }
+
+  .trust-section h2 span {
+    background: linear-gradient(135deg, var(--green-primary), var(--blue-primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .trust-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: clamp(20px, 3vw, 30px);
+  }
+
+  .trust-list li {
+    background: var(--white-pure);
+    padding: clamp(20px, 4vw, 28px);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--gray-light);
+    transition: all 0.3s ease;
+    font-size: clamp(0.9rem, 2.2vw, 1rem);
+    line-height: 1.5;
+    color: var(--gray-dark);
+    position: relative;
+    padding-left: clamp(50px, 8vw, 70px);
+  }
+
+  .trust-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(27, 143, 108, 0.1);
+    border-color: var(--green-light);
+  }
+
+  /* Icono decorativo con check */
+  .trust-list li:before {
+    content: '✓';
+    position: absolute;
+    left: clamp(20px, 4vw, 25px);
+    top: 50%;
+    transform: translateY(-50%);
+    width: clamp(30px, 6vw, 40px);
+    height: clamp(30px, 6vw, 40px);
+    background: linear-gradient(135deg, var(--green-primary), var(--green-dark));
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(1.1rem, 3vw, 1.3rem);
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .trust-list li strong {
+    color: var(--green-primary);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 5px;
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+  }
+
+  /* ============================================
+    ANIMACIÓN
+    ============================================ */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .trust-section {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+/* ============================================
    PROJECTS SECTION
    ============================================ */
 .projects {
@@ -734,6 +842,135 @@ body {
   pointer-events: none;
 }
 
+/* ============================================
+   SECCIÓN SEO - ESCALADO FLUIDO COMPLETO
+   ============================================ */
+.seo-content {
+  padding: clamp(30px, 8vw, 80px) 0;
+  background: linear-gradient(135deg, var(--white-soft) 0%, var(--white-pure) 100%);
+  border-top: 1px solid rgba(27, 143, 108, 0.1);
+  border-bottom: 1px solid rgba(27, 143, 108, 0.1);
+  position: relative;
+}
+
+.seo-content .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.seo-content h2 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    font-weight: 700;
+    color: var(--dark-gray);
+    margin-bottom: clamp(30px, 5vw, 45px);
+    text-align: center;
+    line-height: 1.3;
+    position: relative;
+    padding-bottom: 15px;
+  }
+
+.seo-content h2 span {
+  background: linear-gradient(135deg, var(--green-primary), var(--blue-primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.seo-content p {
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  line-height: 1.7;
+  color: var(--gray-dark);
+  margin-bottom: clamp(15px, 3vw, 25px);
+  text-align: justify;
+}
+
+.seo-content p strong {
+  color: var(--green-primary);
+  font-weight: 700;
+}
+
+.seo-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* ============================================
+   SECCIÓN FAQ - ESCALADO FLUIDO COMPLETO
+   ============================================ */
+.faq-section {
+  padding: clamp(30px, 8vw, 80px) 0;
+  background: var(--white-pure);
+  position: relative;
+}
+
+.faq-section .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.faq-section h2 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    font-weight: 700;
+    color: var(--dark-gray);
+    margin-bottom: clamp(30px, 5vw, 45px);
+    text-align: center;
+    line-height: 1.3;
+    position: relative;
+    padding-bottom: 15px;
+  }
+
+.faq-section h2 span {
+  background: linear-gradient(135deg, var(--green-primary), var(--blue-primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.faq-section h3 {
+  font-size: clamp(1rem, 3vw, 1.3rem);
+  font-weight: 600;
+  color: var(--green-primary);
+  margin: clamp(20px, 4vw, 35px) 0 clamp(8px, 2vw, 12px) 0;
+  padding-left: clamp(12px, 3vw, 20px);
+  border-left: 4px solid var(--blue-primary);
+  transition: all 0.3s ease;
+  line-height: 1.4;
+}
+
+.faq-section h3:first-of-type {
+  margin-top: 0;
+}
+
+.faq-section h3:hover {
+  border-left-color: var(--green-primary);
+  transform: translateX(5px);
+}
+
+.faq-section p {
+  font-size: clamp(0.85rem, 2.2vw, 1rem);
+  line-height: 1.7;
+  color: var(--gray-dark);
+  margin-bottom: clamp(15px, 3vw, 20px);
+  padding-left: clamp(16px, 4vw, 24px);
+}
+
+.faq-section p strong {
+  color: var(--blue-primary);
+  font-weight: 600;
+}
+
+.faq-section a {
+  color: var(--blue-primary);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--blue-light);
+  transition: all 0.3s ease;
+}
+
+.faq-section a:hover {
+  color: var(--green-primary);
+  border-bottom-color: var(--green-primary);
+}
 /* ============================================
    CONTACT SECTION
    ============================================ */
@@ -910,74 +1147,88 @@ body {
     text-decoration: underline;
   }
 
-/* Reviews CTA */
-  .reviews-cta {
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-    border-radius: 20px;
-    padding: 25px 30px;
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(27, 143, 108, 0.2);
-  }
+/* ============================================
+   REVIEWS CTA - DENTRO DE CONTACTO
+   ============================================ */
+.reviews-cta {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border-radius: 20px;
+  padding: clamp(15px, 4vw, 25px);
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: clamp(15px, 3vw, 20px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(27, 143, 108, 0.2);
+}
 
-  .reviews-icon svg {
-    color: #f4b400;
-    width: 48px;
-    height: 48px;
-  }
+.reviews-icon svg {
+  color: #f4b400;
+  width: clamp(32px, 8vw, 48px);
+  height: clamp(32px, 8vw, 48px);
+}
 
-  .reviews-content {
-    flex: 1;
-  }
+.reviews-content {
+  flex: 1;
+}
 
-  .reviews-content h4 {
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: var(--green-primary);
-    margin: 0 0 8px 0;
-  }
+.reviews-content h4 {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  font-weight: 700;
+  color: var(--green-primary);
+  margin: 0 0 8px 0;
+}
 
-  .reviews-content p {
-    font-size: 0.95rem;
-    color: var(--gray-dark);
-    margin: 0 0 15px 0;
-  }
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
 
-  .btn-reviews {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: linear-gradient(135deg, var(--green-primary), var(--green-dark));
-    color: white;
-    padding: 10px 24px;
-    border-radius: 40px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: all 0.3s ease;
-  }
+.stars {
+  color: #f4b400;
+  font-size: clamp(0.85rem, 2.5vw, 1rem);
+  letter-spacing: 2px;
+}
 
-  .btn-reviews:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(27, 143, 108, 0.3);
-  }
+.rating-text {
+  font-size: clamp(0.7rem, 2vw, 0.85rem);
+  color: var(--gray-dark);
+}
 
-  .reviews-cta-simple {
-    background: rgba(27, 143, 108, 0.05);
-    border-radius: 12px;
-    padding: 12px 20px;
-    text-align: center;
-    margin: 20px 0;
-    border-left: 3px solid var(--green-primary);
-  }
+.reviews-content p {
+  font-size: clamp(0.8rem, 2.2vw, 0.95rem);
+  color: var(--gray-dark);
+  margin: 0 0 15px 0;
+  line-height: 1.5;
+}
 
-  .reviews-cta-simple a {
-    color: var(--green-primary);
-    font-weight: 600;
-    text-decoration: none;
-  }
+.btn-reviews {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--green-primary), var(--green-dark));
+  color: white;
+  padding: clamp(8px, 2vw, 10px) clamp(16px, 4vw, 24px);
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: clamp(0.75rem, 2vw, 0.9rem);
+  transition: all 0.3s ease;
+}
+
+.btn-reviews:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(27, 143, 108, 0.3);
+}
+
+.btn-reviews svg {
+  width: 16px;
+  height: 16px;
+}
+
 
 /* ============================================
    FOOTER
@@ -1038,6 +1289,23 @@ body {
   color: inherit; /* 👈 usa el mismo color del <p> */
   text-decoration: underline; /* opcional: sin subrayado */
 }
+
+/* ============================================
+   FOOTER SEO
+   ============================================ */
+.footer-seo {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: clamp(0.7rem, 2vw, 0.85rem);
+  color: rgba(255, 255, 255, 0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1rem;
+}
+
+.footer-seo p {
+  margin: 0.5rem 0;
+}
+
 /* ============================================
    WHATSAPP FLOTANTE
    ============================================ */
@@ -1083,4 +1351,44 @@ body {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+/* ============================================
+   ANIMACIONES
+   ============================================ */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.seo-content,
+.faq-section {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.seo-content p,
+.faq-section p {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.seo-content a,
+.faq-section a {
+  color: var(--blue-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+}
+
+.seo-content a:hover,
+.faq-section a:hover {
+  color: var(--green-primary);
+  border-bottom-color: var(--green-primary);
 }
