@@ -238,7 +238,7 @@ ${mensaje}`;
     const textoCodificado = encodeURIComponent(texto);
 
     // Número (formato internacional sin + ni espacios)
-    const numero = "541135242337";
+    const numero = "541139183289";
 
     const url = `https://wa.me/${numero}?text=${textoCodificado}`;
 

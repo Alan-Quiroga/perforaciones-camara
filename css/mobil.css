@@ -349,7 +349,7 @@
   
   
   .logo-text {
-    font-size: 1.5rem;
+    font-size: clamp(1.1rem, 5vw, 1.5rem);;
   }
 
   .mobile-menu-btn {
