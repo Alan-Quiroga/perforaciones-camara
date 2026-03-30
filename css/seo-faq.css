@@ -1,8 +1,8 @@
 /* ============================================
-   SECCIÓN SEO (TEXTO EXTENSO) - NUEVO ESTILO
+   SECCIÓN SEO - ESCALADO FLUIDO COMPLETO
    ============================================ */
 .seo-content {
-  padding: 60px 0;
+  padding: clamp(30px, 8vw, 80px) 0;
   background: linear-gradient(135deg, var(--white-soft) 0%, var(--white-pure) 100%);
   border-top: 1px solid rgba(27, 143, 108, 0.1);
   border-bottom: 1px solid rgba(27, 143, 108, 0.1);
@@ -10,37 +10,34 @@
 }
 
 .seo-content .container {
-  max-width: 1000px;
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .seo-content h2 {
-  font-size: 2.2rem;
+  font-size: clamp(1.6rem, 5vw, 2.8rem);
   font-weight: 700;
   color: var(--dark-gray);
-  margin-bottom: 25px;
-  position: relative;
-  padding-bottom: 15px;
+  margin-bottom: clamp(20px, 3vw, 35px);
   text-align: center;
+  line-height: 1.3;
+  white-space: normal;
+  word-break: break-word;
 }
 
-.seo-content h2:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(90deg, var(--green-primary), var(--blue-primary));
-  border-radius: 3px;
+.seo-content h2 span {
+  background: linear-gradient(135deg, var(--green-primary), var(--blue-primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .seo-content p {
-  font-size: 1.05rem;
-  line-height: 1.8;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  line-height: 1.7;
   color: var(--gray-dark);
-  margin-bottom: 20px;
+  margin-bottom: clamp(15px, 3vw, 25px);
   text-align: justify;
 }
 
@@ -54,49 +51,47 @@
 }
 
 /* ============================================
-   SECCIÓN FAQ (PREGUNTAS FRECUENTES) - ORO SEO
+   SECCIÓN FAQ - ESCALADO FLUIDO COMPLETO
    ============================================ */
 .faq-section {
-  padding: 60px 0;
+  padding: clamp(30px, 8vw, 80px) 0;
   background: var(--white-pure);
   position: relative;
 }
 
 .faq-section .container {
-  max-width: 1000px;
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .faq-section h2 {
-  font-size: 2.2rem;
+  font-size: clamp(1.4rem, 5vw, 2.5rem);
   font-weight: 700;
   color: var(--dark-gray);
-  margin-bottom: 40px;
-  position: relative;
-  padding-bottom: 15px;
+  margin-bottom: clamp(25px, 5vw, 45px);
   text-align: center;
+  line-height: 1.3;
+  white-space: normal;
+  word-break: break-word;
 }
 
-.faq-section h2:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(90deg, var(--green-primary), var(--blue-primary));
-  border-radius: 3px;
+.faq-section h2 span {
+  background: linear-gradient(135deg, var(--green-primary), var(--blue-primary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .faq-section h3 {
-  font-size: 1.3rem;
+  font-size: clamp(1rem, 3vw, 1.3rem);
   font-weight: 600;
   color: var(--green-primary);
-  margin: 30px 0 12px 0;
-  padding-left: 20px;
+  margin: clamp(20px, 4vw, 35px) 0 clamp(8px, 2vw, 12px) 0;
+  padding-left: clamp(12px, 3vw, 20px);
   border-left: 4px solid var(--blue-primary);
   transition: all 0.3s ease;
+  line-height: 1.4;
 }
 
 .faq-section h3:first-of-type {
@@ -109,11 +104,11 @@
 }
 
 .faq-section p {
-  font-size: 1rem;
+  font-size: clamp(0.85rem, 2.2vw, 1rem);
   line-height: 1.7;
   color: var(--gray-dark);
-  margin-bottom: 20px;
-  padding-left: 24px;
+  margin-bottom: clamp(15px, 3vw, 20px);
+  padding-left: clamp(16px, 4vw, 24px);
 }
 
 .faq-section p strong {
@@ -121,7 +116,6 @@
   font-weight: 600;
 }
 
-/* Estilo para links dentro de FAQ si los hubiera */
 .faq-section a {
   color: var(--blue-primary);
   text-decoration: none;
@@ -135,87 +129,143 @@
 }
 
 /* ============================================
-   VERSIÓN RESPONSIVE PARA AMBAS SECCIONES
+   REVIEWS CTA - DENTRO DE CONTACTO
+   ============================================ */
+.reviews-cta {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border-radius: 20px;
+  padding: clamp(15px, 4vw, 25px);
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: clamp(15px, 3vw, 20px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(27, 143, 108, 0.2);
+}
+
+.reviews-icon svg {
+  color: #f4b400;
+  width: clamp(32px, 8vw, 48px);
+  height: clamp(32px, 8vw, 48px);
+}
+
+.reviews-content {
+  flex: 1;
+}
+
+.reviews-content h4 {
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  font-weight: 700;
+  color: var(--green-primary);
+  margin: 0 0 8px 0;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.stars {
+  color: #f4b400;
+  font-size: clamp(0.85rem, 2.5vw, 1rem);
+  letter-spacing: 2px;
+}
+
+.rating-text {
+  font-size: clamp(0.7rem, 2vw, 0.85rem);
+  color: var(--gray-dark);
+}
+
+.reviews-content p {
+  font-size: clamp(0.8rem, 2.2vw, 0.95rem);
+  color: var(--gray-dark);
+  margin: 0 0 15px 0;
+  line-height: 1.5;
+}
+
+.btn-reviews {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, var(--green-primary), var(--green-dark));
+  color: white;
+  padding: clamp(8px, 2vw, 10px) clamp(16px, 4vw, 24px);
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: clamp(0.75rem, 2vw, 0.9rem);
+  transition: all 0.3s ease;
+}
+
+.btn-reviews:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(27, 143, 108, 0.3);
+}
+
+.btn-reviews svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ============================================
+   FOOTER SEO
+   ============================================ */
+.footer-seo {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: clamp(0.7rem, 2vw, 0.85rem);
+  color: rgba(255, 255, 255, 0.7);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 1rem;
+}
+
+.footer-seo p {
+  margin: 0.5rem 0;
+}
+
+/* ============================================
+   AJUSTES RESPONSIVE ADICIONALES
    ============================================ */
 @media (max-width: 768px) {
-  .seo-content {
-    padding: 40px 0;
-  }
-  
-  .seo-content h2 {
-    font-size: 1.6rem;
-  }
-  
-  .seo-content p {
-    font-size: 0.95rem;
-    line-height: 1.6;
+  .seo-content p,
+  .faq-section p {
     text-align: left;
   }
   
-  .faq-section {
-    padding: 40px 0;
+  .reviews-cta {
+    flex-direction: column;
+    text-align: center;
   }
   
-  .faq-section h2 {
-    font-size: 1.6rem;
-    margin-bottom: 30px;
+  .reviews-content h4 {
+    text-align: center;
   }
   
-  .faq-section h3 {
-    font-size: 1.1rem;
-    margin: 20px 0 10px 0;
-    padding-left: 12px;
-  }
-  
-  .faq-section p {
-    font-size: 0.9rem;
-    padding-left: 16px;
-    margin-bottom: 15px;
+  .rating {
+    justify-content: center;
   }
 }
 
 @media (max-width: 480px) {
-  .seo-content {
-    padding: 30px 0;
-  }
-  
-  .seo-content h2 {
-    font-size: 1.4rem;
-  }
-  
-  .seo-content p {
-    font-size: 0.9rem;
-  }
-  
-  .faq-section {
-    padding: 30px 0;
-  }
-  
-  .faq-section h2 {
-    font-size: 1.4rem;
+  .seo-content .container,
+  .faq-section .container {
+    width: 92%;
   }
   
   .faq-section h3 {
-    font-size: 1rem;
+    padding-left: 10px;
   }
   
   .faq-section p {
-    font-size: 0.85rem;
+    padding-left: 14px;
   }
 }
 
 /* ============================================
-   VARIANTE CON FONDO ALTERNATIVO (opcional)
-   Si quieres que FAQ tenga fondo diferente, descomenta:
-   ============================================ */
-/*
-.faq-section {
-  background: linear-gradient(135deg, var(--white-soft) 0%, var(--white-pure) 100%);
-}
-*/
-
-/* ============================================
-   ANIMACIÓN SUTIL AL HACER SCROLL
+   ANIMACIONES
    ============================================ */
 @keyframes fadeInUp {
   from {
@@ -233,18 +283,12 @@
   animation: fadeInUp 0.8s ease-out;
 }
 
-/* ============================================
-   MEJORA DE ACCESIBILIDAD Y LECTURA
-   ============================================ */
 .seo-content p,
 .faq-section p {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
-/* ============================================
-   ESTILO PARA ENLACES INTERNOS SI SE AGREGAN
-   ============================================ */
 .seo-content a,
 .faq-section a {
   color: var(--blue-primary);
@@ -258,16 +302,4 @@
 .faq-section a:hover {
   color: var(--green-primary);
   border-bottom-color: var(--green-primary);
-}
-
-.footer-seo {
-  text-align: center;
-  margin-bottom: 1rem;
-  font-size: 0.8rem;
-  color: rgba(255,255,255,0.7);
-  border-top: 1px solid rgba(255,255,255,0.2);
-  padding-top: 1rem;
-}
-.footer-seo p {
-  margin: 0.5rem 0;
 }

@@ -776,6 +776,8 @@ body {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
+
+
 .form-group {
   margin-bottom: 25px;
 }
@@ -908,7 +910,75 @@ body {
     text-decoration: underline;
   }
 
-  
+/* Reviews CTA */
+  .reviews-cta {
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 20px;
+    padding: 25px 30px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(27, 143, 108, 0.2);
+  }
+
+  .reviews-icon svg {
+    color: #f4b400;
+    width: 48px;
+    height: 48px;
+  }
+
+  .reviews-content {
+    flex: 1;
+  }
+
+  .reviews-content h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--green-primary);
+    margin: 0 0 8px 0;
+  }
+
+  .reviews-content p {
+    font-size: 0.95rem;
+    color: var(--gray-dark);
+    margin: 0 0 15px 0;
+  }
+
+  .btn-reviews {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--green-primary), var(--green-dark));
+    color: white;
+    padding: 10px 24px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  .btn-reviews:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(27, 143, 108, 0.3);
+  }
+
+  .reviews-cta-simple {
+    background: rgba(27, 143, 108, 0.05);
+    border-radius: 12px;
+    padding: 12px 20px;
+    text-align: center;
+    margin: 20px 0;
+    border-left: 3px solid var(--green-primary);
+  }
+
+  .reviews-cta-simple a {
+    color: var(--green-primary);
+    font-weight: 600;
+    text-decoration: none;
+  }
+
 /* ============================================
    FOOTER
    ============================================ */

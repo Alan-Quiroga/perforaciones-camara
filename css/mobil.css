@@ -499,6 +499,12 @@
     margin-bottom: 5px;
   }
 
+    .reviews-cta {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    }
+
   /* WhatsApp Button */
   .whatsapp-float {
     position: fixed;
