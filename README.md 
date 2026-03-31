@@ -1,0 +1,143 @@
+# Perforaciones Cámara
+
+Sitio web profesional para servicios de perforaciones de agua, instalación y reparación de bombas sumergibles en zona oeste de Buenos Aires.
+
+## 🚀 Demo
+
+🔗 [https://perforacionescamara.com.ar/](https://perforacionescamara.com.ar/)
+
+---
+
+## 📋 Descripción
+
+Perforaciones Cámara es una empresa con más de 25 años de experiencia en perforaciones de agua, pozos profundos y sistemas de bombeo. Este sitio web presenta sus servicios, proyectos realizados, información de contacto y está optimizado para SEO local con foco en San Miguel, José C. Paz, Moreno, Pilar y zona oeste del Gran Buenos Aires.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- **HTML5** - Estructura semántica
+- **CSS3** - Estilos personalizados (base.css, mobil.css, tablet.css)
+- **JavaScript** - Funcionalidades interactivas (menú móvil, carrusel, formulario WhatsApp)
+- **Swiper.js** - Carrusel de proyectos
+- **Netlify** - Hosting y despliegue continuo
+- **Google Fonts** - Tipografías Poppins y Roboto
+- **Schema.org** - Datos estructurados (LocalBusiness + FAQPage)
+
+---
+
+## 📁 Estructura del proyecto
+
+perforaciones-camara/
+├── index.html
+├── css/
+│ ├── base.css
+│ ├── mobil.css
+│ └── tablet.css
+├── js/
+│ └── script.js
+├── img/
+│ ├── logo.webp
+│ ├── perforaciones-de-agua-buenos-aires-zona-oeste.webp
+│ ├── instalacion-bomba-sumergible-san-miguel-jose-c-paz.webp
+│ ├── compresor-agua-presion-constante-zona-oeste.webp
+│ ├── reparacion-bombeadores-moreno-pilar.webp
+│ ├── servicio-tecnico-bombas-24hs-buenos-aires.webp
+│ ├── instalacion-bomba-1hp-residencial-san-miguel.webp
+│ ├── reparacion-bomba-10hp-industrial-jose-c-paz.webp
+│ ├── instalacion-bomba-3hp-comercial-moreno.webp
+│ └── instalacion-bomba-sumergible-pilar-zona-norte.webp
+└── README.md
+
+---
+
+## 🧩 Características principales
+
+- ✅ **Diseño responsive** - Adaptado a móviles, tablets y escritorio
+- ✅ **SEO optimizado** - Meta tags, palabras clave locales, estructura semántica
+- ✅ **Datos estructurados** - Schema.org para LocalBusiness y FAQPage
+- ✅ **Menú móvil** - Navegación tipo hamburguesa con overlay y cierre al tocar fuera
+- ✅ **Carrusel de proyectos** - Swiper.js con autoplay y navegación
+- ✅ **Formulario a WhatsApp** - Envío directo de consultas
+- ✅ **CTA de reseñas** - Enlace a Google Maps para dejar opiniones
+- ✅ **Optimización de imágenes** - WebP con dimensiones y lazy loading
+
+---
+
+## 🚀 Instalación y despliegue
+
+### Localmente
+
+1. Cloná el repositorio:
+```bash
+git clone https://github.com/tuusuario/perforaciones-camara.git
+
+2. Abrí index.html en tu navegador.
+
+En Netlify (recomendado)
+
+1. Subí los archivos a un repositorio de GitHub.
+
+2. Conectá el repositorio en Netlify.
+
+3. Configurá el dominio personalizado en Netlify → Domain Management.
+
+4. Activá el despliegue automático.
+
+🔧 Variables de CSS (colores corporativos)
+
+:root {
+  --green-primary: #1B8F6C;
+  --green-dark: #127E5D;
+  --blue-primary: #1E63C8;
+  --blue-deep: #0D4FB3;
+  --white-pure: #FFFFFF;
+  --white-soft: #F2F2F2;
+  --gray-dark: #666666;
+}
+
+📈 SEO y rendimiento
+
+    Google PageSpeed Insights: 66 (mejorable con compresión de imágenes)
+
+    Rich Results: 6 elementos válidos detectados
+
+    Dominio propio: perforacionescamara.com.ar
+
+    Canonical URL: Configurada correctamente
+
+ 📞 Contacto
+
+    Teléfono: +54 11 3918-3289
+
+    Email: perforacionescamara@gmail.com
+
+    Dirección: Calle Chacabuco, San Salvador y, B1660 José C. Paz, Provincia de Buenos Aires
+
+    Google Maps: https://maps.app.goo.gl/XM9p6diacPf7K8zP7
+
+ 👨‍💻 Créditos
+
+Desarrollado por Brandify Studio
+
+📄 Licencia
+
+Todos los derechos reservados © 2023 Perforaciones Cámara   
+
+
+---
+
+# 📌 PUNTOS IMPORTANTES DEL README
+
+| Sección | Propósito |
+|---------|-----------|
+| **Demo** | Enlace directo al sitio en producción |
+| **Tecnologías** | Muestra las herramientas usadas (útil para otros desarrolladores) |
+| **Estructura** | Ayuda a entender la organización del proyecto |
+| **Instalación** | Instrucciones para desplegar localmente o en Netlify |
+| **SEO y rendimiento** | Documenta el estado actual y áreas de mejora |
+| **Créditos** | Da visibilidad a quien desarrolló el sitio |
+
+---
+
+Si querés, puedo agregar secciones como **Próximas mejoras**, **Backlog** o **Capturas de pantalla**. Decime.

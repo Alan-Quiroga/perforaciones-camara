@@ -265,6 +265,20 @@ body {
 }
 
 /* ============================================
+   SCROLL SUAVE Y PADDING PARA HEADER FIJO
+   ============================================ */
+  html {
+    scroll-padding-top: 20px;
+    scroll-behavior: smooth;
+  }
+
+  /* Fallback para navegadores antiguos */
+  section,
+  div[id] {
+    scroll-margin-top: 20px;
+  }
+
+/* ============================================
    HERO SECTION
    ============================================ */
 .hero {
