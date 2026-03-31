@@ -1,18 +1,76 @@
-// Mobile Menu Toggle
-const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-const navbar = document.querySelector('.navbar');
-
-mobileMenuBtn.addEventListener('click', () => {
-  mobileMenuBtn.classList.toggle('active');
-  navbar.classList.toggle('active');
+// ============================================
+// MENÚ MÓVIL CON CIERRE AL TOCAR FUERA
+// ============================================
+document.addEventListener('DOMContentLoaded', function() {
+  const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+  const navbar = document.querySelector('.navbar');
+  
+  // Crear overlay si no existe
+  let overlay = document.querySelector('.navbar-overlay');
+  if (!overlay) {
+    overlay = document.createElement('div');
+    overlay.className = 'navbar-overlay';
+    document.body.appendChild(overlay);
+  }
+  
+  // Función para cerrar menú
+  function closeMenu() {
+    if (mobileMenuBtn) mobileMenuBtn.classList.remove('active');
+    if (navbar) navbar.classList.remove('active');
+    if (overlay) overlay.classList.remove('active');
+    document.body.style.overflow = ''; // Restaurar scroll
+  }
+  
+  // Función para abrir menú
+  function openMenu() {
+    if (mobileMenuBtn) mobileMenuBtn.classList.add('active');
+    if (navbar) navbar.classList.add('active');
+    if (overlay) overlay.classList.add('active');
+    document.body.style.overflow = 'hidden'; // Bloquear scroll
+  }
+  
+  // Toggle del botón hamburguesa
+  if (mobileMenuBtn && navbar) {
+    mobileMenuBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      if (navbar.classList.contains('active')) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+  }
+  
+  // Cerrar al hacer clic en el overlay
+  if (overlay) {
+    overlay.addEventListener('click', closeMenu);
+  }
+  
+  // Cerrar al hacer clic en cualquier enlace del menú
+  const navLinks = document.querySelectorAll('.nav-link, .btn-nav');
+  navLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+  
+  // Cerrar al presionar tecla ESC
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && navbar && navbar.classList.contains('active')) {
+      closeMenu();
+    }
+  });
 });
 
 // Navbar Scroll Effect
 window.addEventListener('scroll', () => {
   const header = document.querySelector('.header');
-  header.classList.toggle('scrolled', window.scrollY > 50);
+  if (header) {
+    header.classList.toggle('scrolled', window.scrollY > 50);
+  }
 });
 
+// ============================================
+// RESTO DE TU CÓDIGO (services, carrusel, formulario...)
+// ============================================
 // Expansión dinámica de servicios (botones + rotación responsive)
 document.addEventListener('DOMContentLoaded', function () {
   const toggleButtons = document.querySelectorAll('.features-toggle');
@@ -47,11 +105,10 @@ document.addEventListener('DOMContentLoaded', function () {
         ? '▲ Ocultar características'
         : '▼ Ver características';
 
-      ajustarVisibilidadPorPantalla(); // asegura estilo correcto tras click
+      ajustarVisibilidadPorPantalla();
     });
   });
 
-  // Función para ajustar el comportamiento responsive
   function ajustarVisibilidadPorPantalla() {
     const ancho = window.innerWidth;
     const features = document.querySelectorAll('.service-features');
@@ -59,7 +116,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const cards = document.querySelectorAll('.service-card');
 
     if (ancho >= 769) {
-      // Modo tablet: mostrar todo
       features.forEach(el => {
         el.style.maxHeight = 'none';
         el.style.opacity = '1';
@@ -73,7 +129,6 @@ document.addEventListener('DOMContentLoaded', function () {
         card.style.height = 'auto';
       });
     } else {
-      // Modo móvil: vuelve a comportamiento animado
       features.forEach(el => {
         const card = el.closest('.service-card');
         if (!card.classList.contains('expanded')) {
@@ -92,7 +147,6 @@ document.addEventListener('DOMContentLoaded', function () {
         btn.style.display = 'block';
       });
 
-      // Recalcular altura de cada card
       cards.forEach(card => {
         const icon = card.querySelector('.service-icon');
         const title = card.querySelector('h3');
@@ -112,7 +166,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // Ejecutar al cargar y al cambiar tamaño
   window.addEventListener('load', ajustarVisibilidadPorPantalla);
   window.addEventListener('resize', ajustarVisibilidadPorPantalla);
 });
@@ -175,13 +228,12 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     on: {
       init: function () {
-        // Ajustar todas las slides a la misma altura
         setTimeout(() => {
           const slides = document.querySelectorAll('.project-slide');
           let maxHeight = 0;
 
           slides.forEach(slide => {
-            slide.style.height = 'auto'; // reset
+            slide.style.height = 'auto';
             const height = slide.offsetHeight;
             if (height > maxHeight) {
               maxHeight = height;
@@ -191,7 +243,7 @@ document.addEventListener('DOMContentLoaded', function () {
           slides.forEach(slide => {
             slide.style.height = maxHeight + 'px';
           });
-        }, 100); // Esperar a que todo esté bien renderizado
+        }, 100);
       }
     }
   });
@@ -208,20 +260,17 @@ document.addEventListener('DOMContentLoaded', function () {
   form.addEventListener('submit', function(e) {
     e.preventDefault();
 
-    // Obtener valores
     const nombre = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const telefono = document.getElementById('phone').value.trim();
     const servicio = document.getElementById('service').value;
     const mensaje = document.getElementById('message').value.trim();
 
-    // Validación básica
     if (!nombre || !email || !telefono || !servicio || !mensaje) {
       alert('Por favor complete todos los campos');
       return;
     }
 
-    // Mensaje PRO optimizado
     const texto = 
 `Hola! 👋
 Quiero consultar por un servicio.
@@ -234,18 +283,11 @@ Quiero consultar por un servicio.
 📝 Mensaje:
 ${mensaje}`;
 
-    // Codificar para URL
     const textoCodificado = encodeURIComponent(texto);
-
-    // Número (formato internacional sin + ni espacios)
     const numero = "541139183289";
-
     const url = `https://wa.me/${numero}?text=${textoCodificado}`;
 
-    // Abrir WhatsApp
     window.open(url, '_blank');
-
-    // Reset opcional del formulario
     form.reset();
   });
 });

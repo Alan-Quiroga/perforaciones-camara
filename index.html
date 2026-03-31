@@ -5,7 +5,7 @@
   <!-- TITLE MEJORADO: prioriza "perforaciones de agua" y zona geográfica clave -->
   <title>Perforaciones de Agua en Buenos Aires | Pozos, Bombas Sumergibles y Mantenimiento</title>
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Perforaciones Camara: Especialistas en perforación de pozos e instalación de bombas sumergibles en Buenos Aires y zona oeste (San Miguel, José C. Paz, Moreno, Pilar). Servicio técnico 24/7 con 25 años de experiencia. Cotización inmediata y garantía extendida.">
   <!-- keywords eliminadas (Google ya no las usa), mantenemos por compatibilidad pero sin peso SEO -->
   <meta name="geo.region" content="AR-B" />
@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="preconnect" href="https://unpkg.com">
-  <link rel="canonical" href="https://www.perforacionescamara.com.ar" />
+  <link rel="canonical" href="https://perforacionescamara.com.ar/" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
   <script type="application/ld+json">
@@ -36,7 +36,7 @@
       {
         "@type": "LocalBusiness",
         "name": "Perforaciones Camara",
-        "image": "https://www.perforacionescamara.com.ar/img/logo.webp",
+        "image": "https://perforacionescamara.com.ar/img/logo.webp",
         "telephone": "+541161022419",
         "email": "perforacionescamara@gmail.com",
         "address": {
@@ -147,7 +147,9 @@
     <div class="container">
       <a href="https://www.perforacionescamara.com.ar" class="logo">
         <div class="logo-image">
-          <img src="img/logo.webp" alt="Perforaciones Camara especialistas en perforaciones de agua y bombas sumergibles en Buenos Aires">
+          <img src="img/logo.webp" 
+               alt="Perforaciones Camara especialistas en perforaciones de agua y bombas sumergibles en Buenos Aires"
+               width="200">
         </div>
         <div class="logo-info">
           <div class="logo-text">Perforaciones<span>Camara</span></div>
@@ -157,12 +159,26 @@
       
       <nav class="navbar" aria-label="Navegación principal">
         <ul class="nav-links">
-          <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
-          <li class="nav-item"><a href="#proceso" class="nav-link">Proceso</a></li>
-          <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
-          <li class="nav-item"><a href="#contacto" class="btn-nav">
-            <i class="fas fa-phone-alt"></i> Contacto
-          </a></li>
+          <li class="nav-item">
+            <a href="#servicios" class="nav-link">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a href="#quienes-somos" class="nav-link">Quiénes<br>somos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#porque-elegirnos" class="nav-link">Por qué<br>elegirnos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#proyectos" class="nav-link">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a href="#preguntas-frecuentes" class="nav-link">Preguntas</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contacto" class="btn-nav nav-link">
+              <i class="fas fa-phone-alt"></i> Contacto
+            </a>
+          </li>
         </ul>
       </nav>
       
@@ -173,6 +189,9 @@
       </div>
     </div>
   </header>
+
+  <!-- Overlay para cerrar menú móvil -->
+  <div class="navbar-overlay"></div>
 
   <nav class="breadcrumbs" aria-label="Ruta de navegación">
     <ol itemscope itemtype="https://schema.org/BreadcrumbList">
@@ -189,395 +208,415 @@
     </ol>
   </nav>
   
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <!-- H1 mejorado con enfoque geográfico: zona oeste + servicios clave -->
-        <h1>Perforaciones de Agua en Zona Oeste | Pozos y Bombas Sumergibles</h1>
-        <p><strong>Especialistas en instalación y reparación de bombas sumergibles</strong>. Más de 25 años de experiencia en perforaciones de agua, pozos para riego y sistemas de bombeo en toda la provincia de Buenos Aires, especialmente en <strong>San Miguel, José C. Paz, Moreno, Pilar y zona oeste</strong>.</p>
-        <div class="hero-buttons">
-          <a href="#contacto" class="btn-primary">Solicitar Presupuesto</a>
-          <a href="tel:+541139183289" class="btn-secondary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-            </svg>
-            Llamar Ahora
-          </a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <!-- ALT mejorado con geo-referencia -->
-        <img src="img/perforaciones-de-agua-buenos-aires-zona-oeste.webp" alt="Instalación profesional de bomba sumergible en San Miguel y zona oeste">
-      </div>
-    </div>
-  </section>
-
-  <!-- Servicios -->
-  <section id="servicios" class="services">
-    <div class="container">
-      <div class="section-header">
-        <h2>Nuestros <span>Servicios</span></h2>
-        <p>Soluciones completas para todas tus necesidades de agua</p>
-      </div>
-      <div class="services-grid">
-        <div class="service-card" itemscope itemtype="http://schema.org/Service">
-          <div class="service-icon">
-            <img src="img/instalacion-bomba-sumergible-san-miguel-jose-c-paz.webp" 
-                alt="instalación y reparación de bombas sumergibles en San Miguel José C Paz y zona oeste" 
-                loading="lazy"
-                width="100"
-                height="100"
-                itemprop="image">
-          </div>
-          
-          <h3 itemprop="name">Instalación de Bombas Sumergibles <strong>en Buenos Aires</strong></h3>
-          
-          <div itemprop="description">
-            <p>Servicio profesional de <strong>instalación, mantenimiento y reparación de bombas sumergibles</strong> para pozos profundos en <strong>toda la provincia de Buenos Aires, con cobertura especial en San Miguel, José C. Paz, Moreno y Pilar</strong>. Garantía extendida de 24 meses en todas nuestras instalaciones.</p>
-          </div>
-          
-          <button class="features-toggle">▼ Ver características</button>
-          
-          <ul class="service-features">
-            <li itemprop="feature" itemscope itemtype="http://schema.org/PropertyValue">
-              <strong><span itemprop="name">Profundidad máxima:</span></strong> 
-              <span itemprop="value">150 metros</span> (para pozos profundos)
-            </li>
-            <li itemprop="feature" itemscope itemtype="http://schema.org/PropertyValue">
-              <strong><span itemprop="name">Materiales:</span></strong> 
-              <span itemprop="value">Acero inoxidable AISI 304/316</span> (resistente a la corrosión)
-            </li>
-            <li itemprop="feature" itemscope itemtype="http://schema.org/PropertyValue">
-              <strong><span itemprop="name">Tecnología:</span></strong> 
-              <span itemprop="value">Diseño silencioso</span> (para uso residencial)
-            </li>
-            <li itemprop="feature" itemscope itemtype="http://schema.org/PropertyValue">
-              <strong><span itemprop="name">Marcas:</span></strong>
-              <span itemprop="value">Grundfos, Pedrollo, Lowara</span> (primera calidad)
-            </li>
-            <li itemprop="feature" itemscope itemtype="http://schema.org/PropertyValue">
-              <strong><span itemprop="name">Servicio:</span></strong>
-              <span itemprop="value">Urgencias 24/7</span> (para problemas con suministro de agua)
-            </li>
-          </ul>
-        </div>
-        
-        <div class="service-card" itemscope itemtype="http://schema.org/Service">
-          <div class="service-icon">
-            <img src="img/compresor-agua-presion-constante-zona-oeste.webp" 
-                alt="instalación de compresores de agua para presión constante en zona oeste Gran Buenos Aires" 
-                loading="lazy"
-                width="100"
-                height="100">
-          </div>
-          <h3>Instalación de Compresores de Agua</h3>
-          <p><strong>Sistemas de compresión profesional</strong> para mejorar la presión de agua en <strong>viviendas, industrias y edificios de toda Buenos Aires, con presencia frecuente en José C. Paz, San Miguel, Moreno y Pilar</strong>. Soluciones personalizadas según necesidades.</p>
-          
-          <button class="features-toggle">▼ Ver características</button>
-          
-          <ul class="service-features">
-            <li><strong>Presión ajustable:</strong> 2-10 bar (para uso residencial e industrial)</li>
-            <li><strong>Caudal optimizado:</strong> 100-2000 l/min (sin pérdidas de eficiencia)</li>
-            <li><strong>Eficiencia energética:</strong> Bajo consumo certificado</li>
-            <li><strong>Zona de cobertura:</strong> Toda la provincia de Buenos Aires, con foco en zona oeste</li>
-            <li><strong>Marcas:</strong> Trabajamos con equipos Grundfos, Pedrollo y Schneider</li>
-          </ul>
-        </div>
-
-        <div class="service-card" itemscope itemtype="http://schema.org/Service">
-          <div class="service-icon">
-            <img src="img/reparacion-bombeadores-moreno-pilar.webp" 
-                alt="servicio técnico de bombeadores en Moreno Pilar y toda la zona oeste" 
-                loading="lazy"
-                width="100"
-                height="100">
-          </div>
-          <h3>Servicio Profesional de Bombeadores</h3>
-          <p>Instalación y mantenimiento de <strong>bombeadores de agua</strong> para viviendas y empresas en <strong>toda la provincia de Buenos Aires, destacándonos en barrios de Moreno, Pilar, San Miguel y José C. Paz</strong>. Soluciones eficientes para distribución de agua.</p>
-          
-          <button class="features-toggle">▼ Ver características</button>
-          
-          <ul class="service-features">
-            <li><strong>Caudal:</strong> 1-100 m³/h (para todo tipo de necesidades)</li>
-            <li><strong>Potencia:</strong> 0.5-30 HP (equipos industriales y residenciales)</li>
-            <li><strong>Mantenimiento:</strong> Bajo consumo y larga vida útil</li>
-            <li><strong>Zona de servicio:</strong> Toda la provincia de Buenos Aires, con cobertura prioritaria zona oeste</li>
-          </ul>
-        </div>
-        
-        <div class="service-card" itemscope itemtype="http://schema.org/Service">
-          <div class="service-icon">
-            <img src="img/servicio-tecnico-bombas-24hs-buenos-aires.webp" 
-                alt="reparación urgente de bombas sumergibles y sistemas de bombeo 24 horas Buenos Aires" 
-                loading="lazy"
-                width="100"
-                height="100">
-          </div>
-          <h3>Reparación de Bombas y Sistemas de Bombeo</h3>
-          <p><strong>Servicio técnico especializado</strong> en <strong>reparación de bombas sumergibles</strong> y bombeadores en <strong>toda Buenos Aires, con cuadrillas propias en San Miguel, José C. Paz, Moreno y Pilar</strong>. Diagnóstico preciso y solución inmediata.</p>
-          
-          <button class="features-toggle">▼ Ver características</button>
-          
-          <ul class="service-features">
-            <li><strong>Urgencias:</strong> Servicio las 24hs para emergencias con agua</li>
-            <li><strong>Repuestos:</strong> Originales y de primeras marcas</li>
-            <li><strong>Garantía:</strong> Por escrito en todas nuestras reparaciones</li>
-            <li><strong>Cobertura:</strong> Toda la provincia de Buenos Aires, especialistas en zona oeste</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ¿Por qué elegirnos? -->
-  <section class="trust-section">
-    <div class="container">
-      <h2>¿Por qué elegirnos para tu <span>perforación de agua?</span></h2>
-      <ul class="trust-list">
-        <li><strong>+25 años de experiencia</strong> en perforaciones de agua en Buenos Aires</li>
-        <li><strong>Garantía escrita</strong> en todos nuestros trabajos</li>
-        <li><strong>Atención rápida y personalizada</strong> en toda la zona oeste</li>
-        <li><strong>Equipos profesionales</strong> para trabajos en espacios reducidos</li>
-        <li><strong>Servicio técnico 24 horas</strong> para urgencias</li>
-      </ul>
-    </div>
-  </section>
-  
-  <!-- Proyectos -->
-  <section id="proyectos" class="projects">
-    <div class="container">
-      <div class="section-header">
-        <h2>Trabajos <span>Recientes</span></h2>
-        <p>Algunos de nuestros trabajos realizados</p>
-      </div>
-      
-      <div class="swiper projects-swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide project-slide">
-            <img src="img/instalacion-bomba-1hp-residencial-san-miguel.webp" alt="instalación de bomba sumergible 1HP para uso residencial en San Miguel zona oeste">
-            <div class="project-info">
-              <h3>Instalación de bomba 1 HP</h3>
-              <p>Instalación profesional de bomba de agua residencial con sistema de presión constante.</p>
-              <ul>
-                <li>Instalación bomba 1HP residencial</li>
-                <li>Conexión eléctrica segura</li>
-                <li>Sistema presión constante</li>
-              </ul>              
-            </div>
-          </div>
-          
-          <div class="swiper-slide project-slide">
-            <img src="img/reparacion-bomba-10hp-industrial-jose-c-paz.webp" alt="reparación de bomba industrial 10HP con cambio de sellos mecánicos en José C Paz">
-            <div class="project-info">
-              <h3>Reparación de bomba 10 HP</h3>
-              <p>Reparación de bomba industrial con diagnóstico de fallas y cambio de componentes.</p>
-              <ul>
-                <li>Reparación bomba 10HP industrial</li>
-                <li>Cambio de sellos mecánicos</li>
-                <li>Garantía 3 meses</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="swiper-slide project-slide">
-            <img src="img/instalacion-bomba-3hp-comercial-moreno.webp" alt="instalación de bomba sumergible 3HP para sistema hidroneumático en Moreno Buenos Aires">
-            <div class="project-info">
-              <h3>Instalación de bomba 3 HP</h3>
-              <p>Sistema de bombeo para procesos manufactureros.</p>
-              <ul>
-                <li>Instalación bomba 3HP comercial</li>
-                <li>Configuración hidroneumática</li>
-                <li>Pruebas de presión y garantía de funcionamiento sin interrupciones</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="swiper-slide project-slide">
-            <img src="img/instalacion-bomba-sumergible-pilar-zona-norte.webp" alt="instalación de bomba sumergible 1HP con sistema de presión constante en Pilar zona norte">
-            <div class="project-info">
-              <h3>Instalación de bomba 1 HP</h3>
-              <p>Instalación profesional de bomba de agua residencial con sistema de presión constante.</p>
-              <ul>
-                <li>Instalación bomba 1HP residencial</li>
-                <li>Conexión eléctrica segura</li>
-                <li>Sistema presión constante</li>
-              </ul>              
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECCIÓN SEO NUEVA: Texto extenso con ciudades clave y variantes semánticas -->
-  <section class="seo-content">
-    <div class="container">
-      <h2>Perforaciones de Agua en <span>Buenos Aires y Zona Oeste</span></h2>
-      <p>
-        En <strong>Perforaciones Camara</strong> nos especializamos en perforaciones de agua para hogares, industrias y sistemas de riego en toda la zona oeste de Buenos Aires. 
-        Realizamos perforaciones de pozos de agua para abastecimiento domiciliario, llenado de piscinas, riego de jardines y uso industrial. 
-        Nuestra trayectoria de más de 25 años nos respalda como una de las empresas más confiables en <strong>San Miguel, José C. Paz, Moreno, Pilar y alrededores</strong>.
-      </p>
-      <p>
-        Trabajamos con maquinaria especializada para espacios reducidos, garantizando un servicio rápido y con mínimas molestias. Además de las perforaciones de agua potable, ofrecemos instalación, mantenimiento y reparación de bombas sumergibles y sistemas de bombeo, asegurando un suministro continuo y eficiente. Nuestros técnicos están capacitados para resolver desde pequeñas averías hasta proyectos integrales de perforación para urbanizaciones y campos.
-      </p>
-      <p>
-        Si necesita un pozo de agua en <strong>José C. Paz, San Miguel, Moreno, Pilar, Hurlingham, Ituzaingó o cualquier localidad del oeste del Gran Buenos Aires</strong>, contáctenos. Brindamos soluciones adaptadas al tipo de suelo, profundidad de napa y caudal requerido. Todos nuestros trabajos cuentan con garantía por escrito y seguimiento post-instalación.
-      </p>
-      <p>
-        <strong>Perforaciones de agua domiciliarias, pozos para riego, sistemas de bombeo para edificios y comercios</strong>: somos su aliado estratégico para tener agua las 24 horas. Solicite un presupuesto sin compromiso y compruebe por qué somos referentes en perforaciones en zona oeste.
-      </p>
-    </div>
-  </section>
-
-  <!-- SECCIÓN FAQ (Preguntas Frecuentes) ORO SEO -->
-  <section class="faq-section">
-    <div class="container">
-      <h2>Preguntas Frecuentes sobre <span>Perforaciones de Agua</span></h2>
-      
-      <h3>¿Cuánto cuesta una perforación de agua en Buenos Aires?</h3>
-      <p>El costo depende de la profundidad requerida, el tipo de suelo y la complejidad de la instalación. En Perforaciones Camara ofrecemos presupuestos personalizados y sin cargo. Trabajamos en zona oeste con precios competitivos y financiación en algunos casos.</p>
-      
-      <h3>¿Cuánto tarda una perforación de pozo de agua?</h3>
-      <p>Generalmente una perforación residencial puede completarse entre 1 y 3 días, dependiendo de las condiciones del terreno y la profundidad. En proyectos más grandes, coordinamos plazos ajustados a sus necesidades.</p>
-      
-      <h3>¿Qué mantenimiento requieren los pozos y bombas sumergibles?</h3>
-      <p>Recomendamos una revisión anual para verificar el estado de la bomba, el tablero eléctrico y la calidad del agua. Esto prolonga la vida útil del equipo y evita paradas imprevistas. Nuestro servicio técnico cubre toda la provincia de Buenos Aires con respuesta rápida.</p>
-      
-      <h3>¿En qué zonas de Buenos Aires trabajan?</h3>
-      <p>Atendemos toda la provincia de Buenos Aires, con especial cobertura en <strong>San Miguel, José C. Paz, Moreno, Pilar, Merlo, Marcos Paz, Luján y toda la zona oeste</strong>. También realizamos trabajos en Capital Federal y zonas aledañas.</p>
-      
-      <h3>¿Realizan instalaciones para edificios o industrias?</h3>
-      <p>Sí, contamos con equipos de alta potencia y sistemas de presión constante ideales para edificios, countries, fábricas y emprendimientos comerciales. Adaptamos la ingeniería del proyecto según el caudal y presión requeridos.</p>
-    </div>
-  </section>
-
-  <!-- Contacto -->
-  <section id="contacto" class="contact">
-    <div class="container">
-      <div class="section-header">
-        <h2>Contáctenos</h2>
-        <p>Estamos listos para atender sus necesidades</p>
-      </div>
-      
-      <div class="contact-grid">
-        <div class="contact-form">
-          <form id="contactForm">
-            <div class="form-group">
-              <label for="name">Nombre Completo</label>
-              <input type="text" id="name" required>
-            </div>
-            
-            <div class="form-group">
-              <label for="email">Correo Electrónico</label>
-              <input type="email" id="email" required>
-            </div>
-            
-            <div class="form-group">
-              <label for="phone">Teléfono</label>
-              <input type="tel" id="phone" required>
-            </div>
-            
-            <div class="form-group">
-              <label for="service">Servicio de Interés</label>
-              <select id="service" required>
-                <option value="">Seleccione un servicio</option>
-                <option value="bomba">Bomba Sumergible</option>
-                <option value="compresor">Compresor</option>
-                <option value="bombeador">Bombeador</option>
-                <option value="reparacion">Reparación</option>
-                <option value="otro">Otro</option>
-              </select>
-            </div>
-            
-            <div class="form-group">
-              <label for="message">Mensaje</label>
-              <textarea id="message" rows="4" required></textarea>
-            </div>
-            
-            <button type="submit" class="btn-submit">Enviar por WhatsApp</button>
-          </form>
-        </div>
-        
-        <div class="contact-map">
-          <div class="map-container">
-            <!-- Código de mapa CORREGIDO (se eliminó el iframe roto anterior) -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.3105803916956!2d-58.78960759999999!3d-34.4950097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc997631d811b5%3A0x26855a58a3bdd645!2sPerforaciones%20camara!5e0!3m2!1ses!2sar!4v1747162366873!5m2!1ses!2sar" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-          
-          <div class="contact-info">
-            <div class="info-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-              </svg>
-              <p>
-                <a href="https://maps.app.goo.gl/XM9p6diacPf7K8zP7" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  class="contact-link">
-                  Calle Chacabuco, San Salvador y, B1660 José C. Paz, Provincia de Buenos Aires
-                </a>
-              </p>
-            </div>
-            
-            <div class="info-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <!-- H1 mejorado con enfoque geográfico: zona oeste + servicios clave -->
+          <h1>Perforaciones de Agua en Zona Oeste | Pozos y Bombas Sumergibles</h1>
+          <p><strong>Especialistas en instalación y reparación de bombas sumergibles</strong>. Más de 25 años de experiencia en perforaciones de agua, pozos para riego y sistemas de bombeo en toda la provincia de Buenos Aires, especialmente en <strong>San Miguel, José C. Paz, Moreno, Pilar y zona oeste</strong>.</p>
+          <div class="hero-buttons">
+            <a href="#contacto" class="btn-primary">Solicitar Presupuesto</a>
+            <a href="tel:+541139183289" class="btn-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
               </svg>
-              <p><a href="tel:+541139183289" class="contact-link">+54 11 3918-3289</a></p>
+              Llamar Ahora
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <!-- ALT mejorado con geo-referencia -->
+          <img src="img/perforaciones-de-agua-buenos-aires-zona-oeste.webp"
+               alt="Instalación profesional de bomba sumergible en San Miguel y zona oeste"
+               width="800"
+               fetchpriority="high">
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services">
+      <div class="container">
+        <div class="section-header">
+          <h2>Nuestros <span>Servicios</span></h2>
+          <p>Soluciones completas para todas tus necesidades de agua</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card" itemscope itemtype="http://schema.org/Service">
+            <div class="service-icon">
+              <img src="img/instalacion-bomba-sumergible-san-miguel-jose-c-paz.webp" 
+                  alt="instalación y reparación de bombas sumergibles en San Miguel José C Paz y zona oeste" 
+                  loading="lazy"
+                  width="100"
+                  height="100"
+                  itemprop="image">
             </div>
             
-            <div class="info-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-              </svg>
-              <p><a href="mailto:perforacionescamara@gmail.com" class="contact-link">perforacionescamara@gmail.com</a></p>
+            <h3 itemprop="name">Instalación de Bombas Sumergibles <strong>en Buenos Aires</strong></h3>
+            
+            <div itemprop="description">
+              <p>Servicio profesional de <strong>instalación, mantenimiento y reparación de bombas sumergibles</strong> para pozos profundos en <strong>toda la provincia de Buenos Aires, con cobertura especial en San Miguel, José C. Paz, Moreno y Pilar</strong>. Garantía extendida de 24 meses en todas nuestras instalaciones.</p>
             </div>
             
-            <div class="info-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-                <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0-1a8 8 0 1 1 0 16A8 8 0 0 1 8 0z"/>
-                <path d="M8 3a.5.5 0 0 1 .5.5v3.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1 0-1h2.5V3.5A.5.5 0 0 1 8 3z"/>
-              </svg>
-              <p>Lunes a Viernes: 8:00 - 18:00<br>Sábados: 9:00 - 13:00</p>
+            <button class="features-toggle">▼ Ver características</button>
+            
+            <ul class="service-features">
+              <li itemprop="feature" itemscope itemtype="http://schema.org/PropertyValue">
+                <strong><span itemprop="name">Profundidad máxima:</span></strong> 
+                <span itemprop="value">150 metros</span> (para pozos profundos)
+              </li>
+              <li itemprop="feature" itemscope itemtype="http://schema.org/PropertyValue">
+                <strong><span itemprop="name">Materiales:</span></strong> 
+                <span itemprop="value">Acero inoxidable AISI 304/316</span> (resistente a la corrosión)
+              </li>
+              <li itemprop="feature" itemscope itemtype="http://schema.org/PropertyValue">
+                <strong><span itemprop="name">Tecnología:</span></strong> 
+                <span itemprop="value">Diseño silencioso</span> (para uso residencial)
+              </li>
+              <li itemprop="feature" itemscope itemtype="http://schema.org/PropertyValue">
+                <strong><span itemprop="name">Marcas:</span></strong>
+                <span itemprop="value">Grundfos, Pedrollo, Lowara</span> (primera calidad)
+              </li>
+              <li itemprop="feature" itemscope itemtype="http://schema.org/PropertyValue">
+                <strong><span itemprop="name">Servicio:</span></strong>
+                <span itemprop="value">Urgencias 24/7</span> (para problemas con suministro de agua)
+              </li>
+            </ul>
+          </div>
+          
+          <div class="service-card" itemscope itemtype="http://schema.org/Service">
+            <div class="service-icon">
+              <img src="img/compresor-agua-presion-constante-zona-oeste.webp" 
+                  alt="instalación de compresores de agua para presión constante en zona oeste Gran Buenos Aires" 
+                  loading="lazy"
+                  width="100"
+                  height="100">
+            </div>
+            <h3>Instalación de Compresores de Agua</h3>
+            <p><strong>Sistemas de compresión profesional</strong> para mejorar la presión de agua en <strong>viviendas, industrias y edificios de toda Buenos Aires, con presencia frecuente en José C. Paz, San Miguel, Moreno y Pilar</strong>. Soluciones personalizadas según necesidades.</p>
+            
+            <button class="features-toggle">▼ Ver características</button>
+            
+            <ul class="service-features">
+              <li><strong>Presión ajustable:</strong> 2-10 bar (para uso residencial e industrial)</li>
+              <li><strong>Caudal optimizado:</strong> 100-2000 l/min (sin pérdidas de eficiencia)</li>
+              <li><strong>Eficiencia energética:</strong> Bajo consumo certificado</li>
+              <li><strong>Zona de cobertura:</strong> Toda la provincia de Buenos Aires, con foco en zona oeste</li>
+              <li><strong>Marcas:</strong> Trabajamos con equipos Grundfos, Pedrollo y Schneider</li>
+            </ul>
+          </div>
+
+          <div class="service-card" itemscope itemtype="http://schema.org/Service">
+            <div class="service-icon">
+              <img src="img/reparacion-bombeadores-moreno-pilar.webp" 
+                  alt="servicio técnico de bombeadores en Moreno Pilar y toda la zona oeste" 
+                  loading="lazy"
+                  width="100"
+                  height="100">
+            </div>
+            <h3>Servicio Profesional de Bombeadores</h3>
+            <p>Instalación y mantenimiento de <strong>bombeadores de agua</strong> para viviendas y empresas en <strong>toda la provincia de Buenos Aires, destacándonos en barrios de Moreno, Pilar, San Miguel y José C. Paz</strong>. Soluciones eficientes para distribución de agua.</p>
+            
+            <button class="features-toggle">▼ Ver características</button>
+            
+            <ul class="service-features">
+              <li><strong>Caudal:</strong> 1-100 m³/h (para todo tipo de necesidades)</li>
+              <li><strong>Potencia:</strong> 0.5-30 HP (equipos industriales y residenciales)</li>
+              <li><strong>Mantenimiento:</strong> Bajo consumo y larga vida útil</li>
+              <li><strong>Zona de servicio:</strong> Toda la provincia de Buenos Aires, con cobertura prioritaria zona oeste</li>
+            </ul>
+          </div>
+          
+          <div class="service-card" itemscope itemtype="http://schema.org/Service">
+            <div class="service-icon">
+              <img src="img/servicio-tecnico-bombas-24hs-buenos-aires.webp" 
+                  alt="reparación urgente de bombas sumergibles y sistemas de bombeo 24 horas Buenos Aires" 
+                  loading="lazy"
+                  width="100"
+                  height="100">
+            </div>
+            <h3>Reparación de Bombas y Sistemas de Bombeo</h3>
+            <p><strong>Servicio técnico especializado</strong> en <strong>reparación de bombas sumergibles</strong> y bombeadores en <strong>toda Buenos Aires, con cuadrillas propias en San Miguel, José C. Paz, Moreno y Pilar</strong>. Diagnóstico preciso y solución inmediata.</p>
+            
+            <button class="features-toggle">▼ Ver características</button>
+            
+            <ul class="service-features">
+              <li><strong>Urgencias:</strong> Servicio las 24hs para emergencias con agua</li>
+              <li><strong>Repuestos:</strong> Originales y de primeras marcas</li>
+              <li><strong>Garantía:</strong> Por escrito en todas nuestras reparaciones</li>
+              <li><strong>Cobertura:</strong> Toda la provincia de Buenos Aires, especialistas en zona oeste</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ¿Por qué elegirnos? -->
+    <section id="porque-elegirnos" class="trust-section">
+      <div class="container">
+        <h2>¿Por qué elegirnos para tu <span>perforación de agua?</span></h2>
+        <ul class="trust-list">
+          <li><strong>+25 años de experiencia</strong> en perforaciones de agua en Buenos Aires</li>
+          <li><strong>Garantía escrita</strong> en todos nuestros trabajos</li>
+          <li><strong>Atención rápida y personalizada</strong> en toda la zona oeste</li>
+          <li><strong>Equipos profesionales</strong> para trabajos en espacios reducidos</li>
+          <li><strong>Servicio técnico 24 horas</strong> para urgencias</li>
+        </ul>
+      </div>
+    </section>
+    
+    <!-- Proyectos -->
+    <section id="proyectos" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2>Trabajos <span>Recientes</span></h2>
+          <p>Algunos de nuestros trabajos realizados</p>
+        </div>
+        
+        <div class="swiper projects-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide project-slide">
+              <img src="img/instalacion-bomba-1hp-residencial-san-miguel.webp" 
+                   alt="instalación de bomba sumergible 1HP para uso residencial en San Miguel zona oeste"
+                   width="400">
+              <div class="project-info">
+                <h3>Instalación de bomba 1 HP</h3>
+                <p>Instalación profesional de bomba de agua residencial con sistema de presión constante.</p>
+                <ul>
+                  <li>Instalación bomba 1HP residencial</li>
+                  <li>Conexión eléctrica segura</li>
+                  <li>Sistema presión constante</li>
+                </ul>              
+              </div>
+            </div>
+            
+            <div class="swiper-slide project-slide">
+              <img src="img/reparacion-bomba-10hp-industrial-jose-c-paz.webp" 
+                   alt="reparación de bomba industrial 10HP con cambio de sellos mecánicos en José C Paz"
+                   width="400">
+              <div class="project-info">
+                <h3>Reparación de bomba 10 HP</h3>
+                <p>Reparación de bomba industrial con diagnóstico de fallas y cambio de componentes.</p>
+                <ul>
+                  <li>Reparación bomba 10HP industrial</li>
+                  <li>Cambio de sellos mecánicos</li>
+                  <li>Garantía 3 meses</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div class="swiper-slide project-slide">
+              <img src="img/instalacion-bomba-3hp-comercial-moreno.webp" 
+                   alt="instalación de bomba sumergible 3HP para sistema hidroneumático en Moreno Buenos Aires"
+                   width="400">
+              <div class="project-info">
+                <h3>Instalación de bomba 3 HP</h3>
+                <p>Sistema de bombeo para procesos manufactureros.</p>
+                <ul>
+                  <li>Instalación bomba 3HP comercial</li>
+                  <li>Configuración hidroneumática</li>
+                  <li>Pruebas de presión y garantía de funcionamiento sin interrupciones</li>
+                </ul>
+              </div>
             </div>
 
-            <div class="reviews-cta">
-              <div class="reviews-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
-                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-                </svg>
+            <div class="swiper-slide project-slide">
+              <img src="img/instalacion-bomba-sumergible-pilar-zona-norte.webp" 
+                   alt="instalación de bomba sumergible 1HP con sistema de presión constante en Pilar zona norte"
+                   width="400">
+              <div class="project-info">
+                <h3>Instalación de bomba 1 HP</h3>
+                <p>Instalación profesional de bomba de agua residencial con sistema de presión constante.</p>
+                <ul>
+                  <li>Instalación bomba 1HP residencial</li>
+                  <li>Conexión eléctrica segura</li>
+                  <li>Sistema presión constante</li>
+                </ul>              
               </div>
-              <div class="reviews-content">
-                <h4>¿Ya trabajaste con nosotros?</h4>
-                <div class="rating">
-                  <span class="stars">★★★★★</span>
-                  <span class="rating-text">Compartí tu experiencia</span>
-                </div>
-                <p>Tu opinión nos ayuda a seguir mejorando y a más personas encontrar un servicio confiable en perforaciones de agua y bombas sumergibles.</p>
-                <a href="#" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  class="btn-reviews">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN SEO NUEVA: Texto extenso con ciudades clave y variantes semánticas -->
+    <section id="quienes-somos" class="seo-content">
+      <div class="container">
+        <h2>Perforaciones de Agua en <span>Buenos Aires y Zona Oeste</span></h2>
+        <p>
+          En <strong>Perforaciones Camara</strong> nos especializamos en perforaciones de agua para hogares, industrias y sistemas de riego en toda la zona oeste de Buenos Aires. 
+          Realizamos perforaciones de pozos de agua para abastecimiento domiciliario, llenado de piscinas, riego de jardines y uso industrial. 
+          Nuestra trayectoria de más de 25 años nos respalda como una de las empresas más confiables en <strong>San Miguel, José C. Paz, Moreno, Pilar y alrededores</strong>.
+        </p>
+        <p>
+          Trabajamos con maquinaria especializada para espacios reducidos, garantizando un servicio rápido y con mínimas molestias. Además de las perforaciones de agua potable, ofrecemos instalación, mantenimiento y reparación de bombas sumergibles y sistemas de bombeo, asegurando un suministro continuo y eficiente. Nuestros técnicos están capacitados para resolver desde pequeñas averías hasta proyectos integrales de perforación para urbanizaciones y campos.
+        </p>
+        <p>
+          Si necesita un pozo de agua en <strong>José C. Paz, San Miguel, Moreno, Pilar, Hurlingham, Ituzaingó o cualquier localidad del oeste del Gran Buenos Aires</strong>, contáctenos. Brindamos soluciones adaptadas al tipo de suelo, profundidad de napa y caudal requerido. Todos nuestros trabajos cuentan con garantía por escrito y seguimiento post-instalación.
+        </p>
+        <p>
+          <strong>Perforaciones de agua domiciliarias, pozos para riego, sistemas de bombeo para edificios y comercios</strong>: somos su aliado estratégico para tener agua las 24 horas. Solicite un presupuesto sin compromiso y compruebe por qué somos referentes en perforaciones en zona oeste.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN FAQ (Preguntas Frecuentes) ORO SEO -->
+    <section id="preguntas-frecuentes" class="faq-section">
+      <div class="container">
+        <h2>Preguntas Frecuentes sobre <span>Perforaciones de Agua</span></h2>
+        
+        <h3>¿Cuánto cuesta una perforación de agua en Buenos Aires?</h3>
+        <p>El costo depende de la profundidad requerida, el tipo de suelo y la complejidad de la instalación. En Perforaciones Camara ofrecemos presupuestos personalizados y sin cargo. Trabajamos en zona oeste con precios competitivos y financiación en algunos casos.</p>
+        
+        <h3>¿Cuánto tarda una perforación de pozo de agua?</h3>
+        <p>Generalmente una perforación residencial puede completarse entre 1 y 3 días, dependiendo de las condiciones del terreno y la profundidad. En proyectos más grandes, coordinamos plazos ajustados a sus necesidades.</p>
+        
+        <h3>¿Qué mantenimiento requieren los pozos y bombas sumergibles?</h3>
+        <p>Recomendamos una revisión anual para verificar el estado de la bomba, el tablero eléctrico y la calidad del agua. Esto prolonga la vida útil del equipo y evita paradas imprevistas. Nuestro servicio técnico cubre toda la provincia de Buenos Aires con respuesta rápida.</p>
+        
+        <h3>¿En qué zonas de Buenos Aires trabajan?</h3>
+        <p>Atendemos toda la provincia de Buenos Aires, con especial cobertura en <strong>San Miguel, José C. Paz, Moreno, Pilar, Merlo, Marcos Paz, Luján y toda la zona oeste</strong>. También realizamos trabajos en Capital Federal y zonas aledañas.</p>
+        
+        <h3>¿Realizan instalaciones para edificios o industrias?</h3>
+        <p>Sí, contamos con equipos de alta potencia y sistemas de presión constante ideales para edificios, countries, fábricas y emprendimientos comerciales. Adaptamos la ingeniería del proyecto según el caudal y presión requeridos.</p>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contáctenos</h2>
+          <p>Estamos listos para atender sus necesidades</p>
+        </div>
+        
+        <div class="contact-grid">
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Nombre Completo</label>
+                <input type="text" id="name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="service">Servicio de Interés</label>
+                <select id="service" required>
+                  <option value="">Seleccione un servicio</option>
+                  <option value="bomba">Bomba Sumergible</option>
+                  <option value="compresor">Compresor</option>
+                  <option value="bombeador">Bombeador</option>
+                  <option value="reparacion">Reparación</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" rows="4" required></textarea>
+              </div>
+              
+              <button type="submit" class="btn-submit">Enviar por WhatsApp</button>
+            </form>
+          </div>
+          
+          <div class="contact-map">
+            <div class="map-container">
+              <!-- Código de mapa CORREGIDO (se eliminó el iframe roto anterior) -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.3105803916956!2d-58.78960759999999!3d-34.4950097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc997631d811b5%3A0x26855a58a3bdd645!2sPerforaciones%20camara!5e0!3m2!1ses!2sar!4v1747162366873!5m2!1ses!2sar" 
+                      width="100%" 
+                      height="100%" 
+                      style="border:0;" 
+                      allowfullscreen="" 
+                      loading="lazy" 
+                      referrerpolicy="no-referrer-when-downgrade"
+                      title="Ubicación de Perforaciones Cámara en José C. Paz"></iframe>
+            </div>
+            
+            <div class="contact-info">
+              <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                </svg>
+                <p>
+                  <a href="https://maps.app.goo.gl/XM9p6diacPf7K8zP7" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    class="contact-link">
+                    Calle Chacabuco, San Salvador y, B1660 José C. Paz, Provincia de Buenos Aires
+                  </a>
+                </p>
+              </div>
+              
+              <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                </svg>
+                <p><a href="tel:+541139183289" class="contact-link">+54 11 3918-3289</a></p>
+              </div>
+              
+              <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                </svg>
+                <p><a href="mailto:perforacionescamara@gmail.com" class="contact-link">perforacionescamara@gmail.com</a></p>
+              </div>
+              
+              <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0-1a8 8 0 1 1 0 16A8 8 0 0 1 8 0z"/>
+                  <path d="M8 3a.5.5 0 0 1 .5.5v3.5a.5.5 0 0 1-.5.5H5a.5.5 0 0 1 0-1h2.5V3.5A.5.5 0 0 1 8 3z"/>
+                </svg>
+                <p>Lunes a Viernes: 8:00 - 18:00<br>Sábados: 9:00 - 13:00</p>
+              </div>
+
+              <div class="reviews-cta">
+                <div class="reviews-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
                   </svg>
-                  Dejar mi reseña
-                </a>
+                </div>
+                <div class="reviews-content">
+                  <h4>¿Ya trabajaste con nosotros?</h4>
+                  <div class="rating">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-text">Compartí tu experiencia</span>
+                  </div>
+                  <p>Tu opinión nos ayuda a seguir mejorando y a más personas encontrar un servicio confiable en perforaciones de agua y bombas sumergibles.</p>
+                  <a href="#" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="btn-reviews">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                    Dejar mi reseña
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <script src="js/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  </main>
 
  <!-- Footer -->
   <footer class="footer" itemscope itemtype="http://schema.org/LocalBusiness">

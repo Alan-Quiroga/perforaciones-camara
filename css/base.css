@@ -153,83 +153,96 @@ body {
 }
 
 /* Menú de Navegación */
-.navbar {
-  display: flex;
-  align-items: center;
-}
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 1.5rem;
-}
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 0.8rem; /* Reducido para dar más espacio */
+  }
 
-.nav-item {
-  position: relative;
-}
+  .nav-item {
+    position: relative;
+  }
 
-.nav-link {
-  text-decoration: none;
-  color: var(--dark-gray);
-  font-weight: 500;
-  font-size: 1rem;
-  padding: 0.5rem 0;
-  position: relative;
-  transition: var(--transition);
-  display: flex;
-  align-items: center;
-}
+  .nav-link {
+    text-decoration: none;
+    color: var(--dark-gray);
+    font-weight: 500;
+    font-size: 0.9rem; /* Reducido ligeramente */
+    padding: 0.5rem 0;
+    position: relative;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 1.3;
+    white-space: nowrap;
+  }
 
-.nav-link:hover {
-  color: var(--green-primary);
-}
+  /* Estilo especial para enlaces que queremos en dos líneas */
+  .nav-link.two-lines {
+    white-space: normal;
+    max-width: 70px;
+    text-align: center;
+    line-height: 1.2;
+  }
 
-.nav-link:after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(90deg, var(--green-primary), var(--blue-primary));
-  transition: var(--transition);
-}
+  .nav-link:hover {
+    color: var(--green-primary);
+  }
 
-.nav-link:hover:after {
-  width: 100%;
-}
+  .nav-link:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--green-primary), var(--blue-primary));
+    transition: var(--transition);
+  }
 
-/* Botón de Contacto */
-.btn-nav {
-  background: linear-gradient(135deg, var(--green-primary), var(--green-dark));
-  color: var(--white-pure) !important;
-  padding: 0.6rem 1.5rem;
-  border-radius: 30px;
-  font-weight: 600;
-  transition: var(--transition);
-  border: none;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 12px var(--shadow-green);
-}
+  .nav-link:hover:after {
+    width: 100%;
+  }
 
-.btn-nav:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px var(--shadow-green);
-  background: linear-gradient(135deg, var(--green-dark), var(--green-primary));
-}
+  /* Botón de Contacto */
+  .btn-nav {
+    background: linear-gradient(135deg, var(--green-primary), var(--green-dark));
+    color: var(--white-pure) !important;
+    padding: 0.5rem 1.2rem; /* Reducido */
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.9rem; /* Reducido */
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px var(--shadow-green);
+    white-space: nowrap;
+  }
 
-.btn-nav:active {
-  transform: translateY(0);
-}
+  .btn-nav:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px var(--shadow-green);
+    background: linear-gradient(135deg, var(--green-dark), var(--green-primary));
+  }
 
-.btn-nav i {
-  margin-right: 8px;
-}
+  .btn-nav:active {
+    transform: translateY(0);
+  }
+
+  .btn-nav i {
+    margin-right: 8px;
+  }
 
 /* Menú Mobile */
 .mobile-menu-btn {
