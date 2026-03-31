@@ -1199,7 +1199,7 @@ body {
   flex: 1;
 }
 
-.reviews-content h4 {
+.reviews-content h3 {
   font-size: clamp(1rem, 3vw, 1.2rem);
   font-weight: 700;
   color: var(--green-primary);
